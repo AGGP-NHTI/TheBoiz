@@ -8,3 +8,5 @@ Molotov Cocktail
 Bolt-Action Rifle (Kar 98K / Springfield sniper rifle)
 
 Note: real-world examples are only examples to help make sprite completion easier
+
+
