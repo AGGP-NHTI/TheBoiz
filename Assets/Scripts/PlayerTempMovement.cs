@@ -74,32 +74,32 @@ public class PlayerTempMovement : MonoBehaviour
         if (angle > -25 && angle < 25) //Right
         {
             //sprite_renderer.sprite = plr_sprites[20];
-            AnimateRunBaseIndex = 19;
+            AnimateRunBaseIndex = 21;
         }
         else if (angle > 25 && angle < 75) //Right Up
         {
             //sprite_renderer.sprite = plr_sprites[14];
-            AnimateRunBaseIndex = 13;
+            AnimateRunBaseIndex = 15;
         }
         else if(angle > 75 && angle < 115) //Up
         {
             //sprite_renderer.sprite = plr_sprites[2];
-            AnimateRunBaseIndex = 2;
+            AnimateRunBaseIndex = 12;
         }
         else if(angle > 115 && angle < 165) //Left Up
         {
             //sprite_renderer.sprite = plr_sprites[11];
-            AnimateRunBaseIndex = 10;
+            AnimateRunBaseIndex = 9;
         }
         else if(angle > 165 || angle < -165) //Left
         {
             //sprite_renderer.sprite = plr_sprites[5];
-            AnimateRunBaseIndex = 4;
+            AnimateRunBaseIndex = 3;
         }
         else if(angle > -165 && angle < -115) //Left Down
         {
             //sprite_renderer.sprite = plr_sprites[8];
-            AnimateRunBaseIndex = 7;
+            AnimateRunBaseIndex = 6;
         }
         else if(angle > -115 && angle < -75) //Down
         {
@@ -109,7 +109,7 @@ public class PlayerTempMovement : MonoBehaviour
         else if(angle > -75 && angle < -25) //Right Down
         {
             //sprite_renderer.sprite = plr_sprites[17];
-            AnimateRunBaseIndex = 16;
+            AnimateRunBaseIndex = 18;
         }
 
         sprite_renderer.sprite = plr_sprites[AnimateRunBaseIndex + 1];
