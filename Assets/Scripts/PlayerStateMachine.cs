@@ -145,7 +145,7 @@ public class PlayerStateMachine : MonoBehaviour
         stepAmt += 1;
 
 
-        if (stepAmt > 30)
+        if (stepAmt > 25)
         {
 
             stepAmt = 0;
