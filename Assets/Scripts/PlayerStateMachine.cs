@@ -23,9 +23,24 @@ public class PlayerStateMachine : MonoBehaviour
 
     private int stepAmt = 0;
 
+    public bool canShoot;
+    public Weapon plr_weapon;
+    public GameObject proj;
+    public Vector3 plr_dir;
+
+    public AudioClip gunShot;
+    public AudioClip impact;
+    public AudioSource plr_audio;
+
     private void Awake()
     {
         plr_sprites = Resources.LoadAll<Sprite>("player");
+        canShoot = true;
+        plr_weapon = new Weapon();
+        plr_weapon.set_1911();
+
+        plr_audio = GetComponent<AudioSource>();
+        impact = Resources.Load<AudioClip>("bulletimpact1");
     }
 
     void Start()
@@ -46,9 +61,13 @@ public class PlayerStateMachine : MonoBehaviour
         playerMovement();
 
         //States
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButtonDown("Fire1"))
         {
-            SetState(new PlayerShoot(this));
+            if(canShoot)
+            {
+                canShoot = false;
+                SetState(new PlayerShoot(this));
+            }
         }
 
         updateWalkingFrame();
@@ -71,10 +90,23 @@ public class PlayerStateMachine : MonoBehaviour
         }
     }
 
+    public void playerShoot()
+    {
+        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity); // Create projectile
+
+        projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
+        proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
+        proj.GetComponent<ProjectileScript>().impact = impact;
+
+        plr_audio.volume = .25f;
+        plr_audio.PlayOneShot(gunShot);
+    }
+
     void spriteAngle()
     {
         var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        plr_dir = dir;
 
         if (angle > -25 && angle < 25) //Right
         {
@@ -145,7 +177,7 @@ public class PlayerStateMachine : MonoBehaviour
         stepAmt += 1;
 
 
-        if (stepAmt > 25)
+        if (stepAmt > 30)
         {
 
             stepAmt = 0;

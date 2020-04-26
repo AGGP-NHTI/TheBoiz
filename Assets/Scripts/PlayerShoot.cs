@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerShoot : State
 {
 
-    private float fireRate = .5f;
     private float myTime = 0f;
 
     public PlayerShoot(PlayerStateMachine sm) : base(sm)
@@ -15,12 +14,12 @@ public class PlayerShoot : State
 
     public override void OnStateEnter()
     {
-        Debug.Log("Bang");
+        stateMachine.playerShoot();
     }
 
     public override void OnStateExit()
     {
-        Debug.Log("Reload");
+        //Debug.Log("Reload");
     }
 
     public override void Tick()
@@ -28,9 +27,9 @@ public class PlayerShoot : State
 
         myTime = myTime + Time.deltaTime;
 
-        if(myTime > fireRate)
+        if(myTime > stateMachine.plr_weapon.fireRate)
         {
-            stateMachine.SetState(null);
+            stateMachine.canShoot = true;
         }
 
     }
