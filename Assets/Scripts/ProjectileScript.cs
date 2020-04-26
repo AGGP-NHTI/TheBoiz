@@ -18,7 +18,9 @@ public class ProjectileScript : MonoBehaviour
     {
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
+            PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
 
+            psm.SetState(new PlayerDamaged(psm));
         }
         else if(collision.tag == "colliders")
         {
