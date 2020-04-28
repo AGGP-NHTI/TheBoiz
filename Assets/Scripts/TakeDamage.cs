@@ -40,7 +40,6 @@ public class TakeDamage : State
     {
         if (damaged)
         {
-
             if(isPlayer)
             {
                 stateMachine.sprite_renderer.color = damagedColor;
@@ -52,9 +51,11 @@ public class TakeDamage : State
                     stateMachine.SetState(null);
                 }
             }
-            else if(isZombie)
+            if(isZombie)
             {
-                
+                zmStateMachine.health -= 10;
+                damaged = false;
+                zmStateMachine.SetState(null);
             }
             
         }

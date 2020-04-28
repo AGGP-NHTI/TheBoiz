@@ -11,7 +11,16 @@ public class ZombieStateMachine : MonoBehaviour
 
     private void Start()
     {
+        currentState = null;
         health = 100;
+    }
+
+    private void Update()
+    {
+        if (currentState != null)
+        {
+            currentState.Tick();
+        }
     }
 
     public void SetState(State state)

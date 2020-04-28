@@ -29,10 +29,16 @@ public class ProjectileScript : MonoBehaviour
             {
                 PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
 
-                psm.SetState(new PlayerDamaged(psm));
+                psm.SetState(new TakeDamage(psm));
             }
         }
-        else if(collision.tag == "colliders")
+        else if(collision.transform.GetComponentInParent<ZombieStateMachine>())
+        {
+            ZombieStateMachine zsm = collision.transform.GetComponentInParent<ZombieStateMachine>();
+            zsm.SetState(new TakeDamage(zsm));
+            Destroy(gameObject);
+        }
+        else if(collision.tag == "colliders" || collision.tag == "lava")
         {
             
         }

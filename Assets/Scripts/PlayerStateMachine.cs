@@ -94,7 +94,7 @@ public class PlayerStateMachine : MonoBehaviour
     public void playerShoot()
     {
         GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
-            GetComponentInParent<Transform>()); // Create projectile)
+        GetComponentInParent<Transform>()); // Create projectile)
 
         projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
         proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage

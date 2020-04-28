@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 150071021}
   m_Layer: 0
   m_Name: Lava (15)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 201363572}
   m_Layer: 0
   m_Name: Lava
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22721,7 +22721,7 @@ GameObject:
   - component: {fileID: 322748620}
   m_Layer: 0
   m_Name: Lava (2)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22791,7 +22791,7 @@ GameObject:
   - component: {fileID: 371277205}
   m_Layer: 0
   m_Name: Lava (8)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51667,7 +51667,7 @@ GameObject:
   - component: {fileID: 612186687}
   m_Layer: 0
   m_Name: Lava (6)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56491,7 +56491,7 @@ GameObject:
   - component: {fileID: 632221426}
   m_Layer: 0
   m_Name: Lava (14)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56711,7 +56711,7 @@ GameObject:
   - component: {fileID: 682384963}
   m_Layer: 0
   m_Name: Lava (7)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56781,7 +56781,7 @@ GameObject:
   - component: {fileID: 729762421}
   m_Layer: 0
   m_Name: Lava (1)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56956,7 +56956,7 @@ GameObject:
   - component: {fileID: 872262139}
   m_Layer: 0
   m_Name: Lava (5)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61987,7 +61987,7 @@ GameObject:
   - component: {fileID: 988875312}
   m_Layer: 0
   m_Name: Lava (13)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67241,7 +67241,7 @@ GameObject:
   - component: {fileID: 1062862455}
   m_Layer: 0
   m_Name: Lava (4)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67311,7 +67311,7 @@ GameObject:
   - component: {fileID: 1123185018}
   m_Layer: 0
   m_Name: Lava (9)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82371,7 +82371,7 @@ GameObject:
   - component: {fileID: 1428030095}
   m_Layer: 0
   m_Name: Lava (3)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82543,7 +82543,7 @@ GameObject:
   - component: {fileID: 1487079429}
   m_Layer: 0
   m_Name: Lava (16)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92385,7 +92385,7 @@ GameObject:
   - component: {fileID: 1710242372}
   m_Layer: 0
   m_Name: Lava (12)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92509,7 +92509,7 @@ GameObject:
   - component: {fileID: 1724764325}
   m_Layer: 0
   m_Name: Lava (10)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102087,7 +102087,7 @@ GameObject:
   - component: {fileID: 1774384276}
   m_Layer: 0
   m_Name: Lava (11)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112193,7 +112193,7 @@ GameObject:
   - component: {fileID: 1972811184}
   m_Layer: 0
   m_Name: Lava (17)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
