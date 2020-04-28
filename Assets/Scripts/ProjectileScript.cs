@@ -10,6 +10,8 @@ public class ProjectileScript : MonoBehaviour
     public AudioClip impact;
     public GameObject audio_player;
 
+    public GameObject owner;
+
     private void Awake()
     {
     }
@@ -18,9 +20,16 @@ public class ProjectileScript : MonoBehaviour
     {
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
-            PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
+            if (owner.GetComponent<PlayerStateMachine>())
+            {
 
-            psm.SetState(new PlayerDamaged(psm));
+            }
+            else
+            {
+                PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
+
+                psm.SetState(new PlayerDamaged(psm));
+            }
         }
         else if(collision.tag == "colliders")
         {
