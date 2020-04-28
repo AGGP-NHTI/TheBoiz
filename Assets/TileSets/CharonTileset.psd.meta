@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 5199031048734039308
     second: CharonTileset_4
+  - first:
+      213: -5569308624406897389
+    second: CharonTileset_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -302,7 +305,7 @@ TextureImporter:
         width: 32
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,6 +313,48 @@ TextureImporter:
       bones: []
       spriteID: 0a20e58b78f1c5630800000000000000
       internalID: 3917040443679703712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharonTileset_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a1dcf514b082f90800000000000000
+      internalID: -6978315247202526683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharonTileset_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d15b54057d5b2b0800000000000000
+      internalID: -5569308624406897389
       vertices: []
       indices: 
       edges: []
