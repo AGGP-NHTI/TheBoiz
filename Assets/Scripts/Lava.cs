@@ -14,7 +14,9 @@ public class Lava : MonoBehaviour
     {
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
-
+            Debug.Log("player hit lava");
+            PlayerStateMachine temp = collision.transform.GetComponentInParent<PlayerStateMachine>();
+            temp.isAlive = false;
         }
     }
     // Update is called once per frame

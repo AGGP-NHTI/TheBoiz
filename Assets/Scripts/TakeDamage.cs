@@ -10,14 +10,17 @@ public class TakeDamage : State
     private float delay = 0.5f;
     float currentDelay = 0f;
 
+    public bool isPlayer;
+    public bool isZombie;
+
     public TakeDamage(PlayerStateMachine sm) : base(sm)
     {
-
+        isPlayer = true;
     }
 
     public TakeDamage(ZombieStateMachine sm) : base(sm)
     {
-
+        isZombie = true;
     }
 
     public override void OnStateEnter()
