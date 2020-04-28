@@ -196,6 +196,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 11361807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &18722165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 668254729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &18722166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18722165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 0}
 --- !u!1001 &41883249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,6 +294,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 41883249}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &101985104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 281481574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &101985105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101985104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1670177940}
 --- !u!1001 &114259063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,7 +421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &125977792
 BoxCollider2D:
@@ -548,6 +594,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 189317357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &192678303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1879490311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &192678304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192678303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1189073590}
 --- !u!1 &201363570
 GameObject:
   m_ObjectHideFlags: 0
@@ -22702,6 +22771,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 281481574}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &301402112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 957995710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &301402113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301402112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 391752419}
+--- !u!1 &305453853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 6362425303183630006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &305453854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305453853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1670177940}
 --- !u!4 &315413298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -22877,7 +22992,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &391752419
 BoxCollider2D:
@@ -36828,6 +36943,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &458831829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 189317357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &458831830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458831829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 807607520}
 --- !u!1001 &477514336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41861,6 +41999,29 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &542675509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1001284869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &542675510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542675509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1447505592}
 --- !u!1 &559930793
 GameObject:
   m_ObjectHideFlags: 0
@@ -51724,6 +51885,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &613970174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 477514336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &613970175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613970174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1670177940}
+--- !u!1 &614963902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 667871713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &614963903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614963902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1401391166}
 --- !u!1 &624253435
 GameObject:
   m_ObjectHideFlags: 0
@@ -56623,6 +56830,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 667871713}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &668088251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 560928059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &668088252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668088251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1189073590}
 --- !u!1001 &668254729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56915,7 +57145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &807607520
 BoxCollider2D:
@@ -56943,6 +57173,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!1 &822502847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1008662156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &822502848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822502847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 125977792}
 --- !u!1 &872262137
 GameObject:
   m_ObjectHideFlags: 0
@@ -57013,6 +57266,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &878527654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1223308220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &878527655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878527654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1401391166}
 --- !u!1001 &883969752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57088,63 +57364,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 883969752}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &887984375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 887984376}
-  - component: {fileID: 887984377}
-  m_Layer: 0
-  m_Name: collider (10)
-  m_TagString: colliders
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &887984376
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887984375}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.87, y: -1.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1546984759}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &887984377
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887984375}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08055997, y: -0.1544056}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9667125, y: 0.42265892}
-  m_EdgeRadius: 0
 --- !u!1 &910497640
 GameObject:
   m_ObjectHideFlags: 0
@@ -67397,7 +67616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1126143885
 BoxCollider2D:
@@ -76962,7 +77181,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1189073590
 BoxCollider2D:
@@ -76990,6 +77209,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!1 &1202698433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1245609778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202698434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202698433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1670177940}
 --- !u!1001 &1213801535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77290,6 +77532,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1264005551}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1350315528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 883969752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1350315529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350315528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1126143885}
 --- !u!1 &1368105978
 GameObject:
   m_ObjectHideFlags: 0
@@ -77576,7 +77841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1401391166
 BoxCollider2D:
@@ -82502,7 +82767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1447505592
 BoxCollider2D:
@@ -82530,6 +82795,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!1 &1475696658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1213801535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1475696659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475696658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1670177940}
 --- !u!1 &1487079427
 GameObject:
   m_ObjectHideFlags: 0
@@ -82662,16 +82950,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1670177939}
-  - {fileID: 1637800635}
   - {fileID: 1126143884}
   - {fileID: 391752418}
   - {fileID: 1447505591}
   - {fileID: 1401391165}
-  - {fileID: 2048064775}
   - {fileID: 807607519}
   - {fileID: 125977791}
   - {fileID: 1189073589}
-  - {fileID: 887984376}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87429,6 +87714,52 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1585803378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 2075155450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1585803379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585803378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 391752419}
+--- !u!1 &1587667056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 114259063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1587667057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587667056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1401391166}
 --- !u!1001 &1614573446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87504,63 +87835,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1614573446}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1637800634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1637800635}
-  - component: {fileID: 1637800636}
-  m_Layer: 0
-  m_Name: collider (1)
-  m_TagString: colliders
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1637800635
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637800634}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.89, y: 11.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1546984759}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1637800636
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637800634}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08055997, y: -0.1544056}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9667125, y: 0.42265892}
-  m_EdgeRadius: 0
 --- !u!1 &1670177938
 GameObject:
   m_ObjectHideFlags: 0
@@ -97320,6 +97594,29 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1730765658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1018848308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1730765659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730765658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1126143885}
 --- !u!1 &1734749793
 GameObject:
   m_ObjectHideFlags: 0
@@ -102074,6 +102371,29 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1754303911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1614573446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1754303912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754303911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1447505592}
 --- !u!1 &1774384274
 GameObject:
   m_ObjectHideFlags: 0
@@ -102144,6 +102464,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1827838140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 41883249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827838141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827838140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1126143885}
+--- !u!1 &1867344332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1264005551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867344333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867344332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1447505592}
 --- !u!1 &1869353798
 GameObject:
   m_ObjectHideFlags: 0
@@ -102387,6 +102753,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1875000336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 522782967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1875000337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875000336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1126143885}
 --- !u!1001 &1879490311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102672,6 +103061,29 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &1938241588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 11361807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1938241589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938241588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 807607520}
 --- !u!1 &1950562276
 GameObject:
   m_ObjectHideFlags: 0
@@ -107426,6 +107838,29 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1957998943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029739287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1957998944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957998943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  collider: {fileID: 1670177940}
 --- !u!1 &1970947030
 GameObject:
   m_ObjectHideFlags: 0
@@ -112284,63 +112719,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!1 &2048064774
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2048064775}
-  - component: {fileID: 2048064776}
-  m_Layer: 0
-  m_Name: collider (6)
-  m_TagString: colliders
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2048064775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048064774}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.13, y: 4.24, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1546984759}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2048064776
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048064774}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08055997, y: -0.1544056}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9667125, y: 0.42265892}
-  m_EdgeRadius: 0
 --- !u!1001 &2075155450
 PrefabInstance:
   m_ObjectHideFlags: 0
