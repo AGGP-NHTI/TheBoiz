@@ -77534,12 +77534,14 @@ MonoBehaviour:
   moveHorizontal: 0
   moveVertical: 0
   speed: 2.5
+  health: 0
   plr_body: {fileID: 1368105981}
   sprite_renderer: {fileID: 1368105979}
   plr_sprites: []
   AnimateRunBaseIndex: 0
   anim_frame: 0
   canShoot: 0
+  isAlive: 0
   proj: {fileID: 2139472892570551724, guid: 24a66639dacc4e7409db0cec6563b6f2, type: 3}
   plr_dir: {x: 0, y: 0, z: 0}
   gunShot: {fileID: 8300000, guid: b50b2fa29a03ad040860e1bb5937221f, type: 3}

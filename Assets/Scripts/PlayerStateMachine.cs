@@ -46,6 +46,7 @@ public class PlayerStateMachine : MonoBehaviour
     void Start()
     {
         health = 100f;
+        isAlive = true;
     }
 
     
