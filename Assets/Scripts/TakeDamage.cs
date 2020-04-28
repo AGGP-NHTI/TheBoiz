@@ -40,14 +40,23 @@ public class TakeDamage : State
     {
         if (damaged)
         {
-            stateMachine.sprite_renderer.color = damagedColor;
 
-            if (Time.time > currentDelay)
+            if(isPlayer)
             {
-                stateMachine.sprite_renderer.color = normalColor;
-                damaged = false;
-                stateMachine.SetState(null);
+                stateMachine.sprite_renderer.color = damagedColor;
+
+                if (Time.time > currentDelay)
+                {
+                    stateMachine.sprite_renderer.color = normalColor;
+                    damaged = false;
+                    stateMachine.SetState(null);
+                }
             }
+            else if(isZombie)
+            {
+                
+            }
+            
         }
     }
 }
