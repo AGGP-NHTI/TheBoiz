@@ -17,6 +17,7 @@ public class Lava : MonoBehaviour
 
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
+     
           PlayerStateMachine Player = GetComponentInParent<PlayerStateMachine>();
             Player.isAlive = false;
         }
