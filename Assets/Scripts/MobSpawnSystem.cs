@@ -9,7 +9,8 @@ public class MobSpawnSystem : MonoBehaviour
     public GameObject Cultist;
     public GameObject Bleemeay;
     int Selection;
-    public Collider2D collider;
+    public GameObject[] spawners;
+    public int maxMobs;
     
     // Start is called before the first frame update
     void Start()

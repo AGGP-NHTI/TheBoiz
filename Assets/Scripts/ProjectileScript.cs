@@ -10,19 +10,35 @@ public class ProjectileScript : MonoBehaviour
     public AudioClip impact;
     public GameObject audio_player;
 
+    public GameObject owner;
+
     private void Awake()
     {
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
-            PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
+            if (owner.GetComponent<PlayerStateMachine>())
+            {
 
-            psm.SetState(new PlayerDamaged(psm));
+            }
+            else
+            {
+                PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
+
+                psm.SetState(new TakeDamage(psm));
+            }
         }
-        else if(collision.tag == "colliders")
+        else if(collision.transform.GetComponentInParent<ZombieStateMachine>())
+        {
+            ZombieStateMachine zsm = collision.transform.GetComponentInParent<ZombieStateMachine>();
+            zsm.SetState(new TakeDamage(zsm));
+            Destroy(gameObject);
+        }
+        else if(collision.tag == "colliders" || collision.tag == "lava")
         {
             
         }

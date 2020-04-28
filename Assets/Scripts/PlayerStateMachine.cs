@@ -7,7 +7,7 @@ public class PlayerStateMachine : MonoBehaviour
 {
     public float moveHorizontal;
     public float moveVertical;
-    public float speed;
+    public float speed, health;
 
     public Rigidbody2D plr_body;
     private Vector2 movement;
@@ -23,7 +23,7 @@ public class PlayerStateMachine : MonoBehaviour
 
     private int stepAmt = 0;
 
-    public bool canShoot;
+    public bool canShoot, isAlive;
     public Weapon plr_weapon;
     public GameObject proj;
     public Vector3 plr_dir;
@@ -45,7 +45,8 @@ public class PlayerStateMachine : MonoBehaviour
 
     void Start()
     {
-        
+        health = 100f;
+        isAlive = true;
     }
 
     
@@ -92,11 +93,15 @@ public class PlayerStateMachine : MonoBehaviour
 
     public void playerShoot()
     {
-        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity); // Create projectile
+        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
+        GetComponentInParent<Transform>()); // Create projectile)
 
         projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
         proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
         proj.GetComponent<ProjectileScript>().impact = impact;
+        proj.GetComponent<ProjectileScript>().owner = GetComponentInParent<GameObject>();
+
+        Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
 
         plr_audio.volume = .25f;
         plr_audio.PlayOneShot(gunShot);

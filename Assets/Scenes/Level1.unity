@@ -196,6 +196,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 11361807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &18722165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 668254729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &18722166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18722165}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &41883249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,6 +295,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 41883249}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &101985104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 281481574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &101985105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101985104}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &114259063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,7 +423,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &125977792
 BoxCollider2D:
@@ -416,7 +464,7 @@ GameObject:
   - component: {fileID: 150071021}
   m_Layer: 0
   m_Name: Lava (15)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -548,6 +596,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 189317357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &192678303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1879490311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &192678304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192678303}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &201363570
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +633,7 @@ GameObject:
   - component: {fileID: 201363572}
   m_Layer: 0
   m_Name: Lava
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22702,6 +22774,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 281481574}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &301402112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 957995710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &301402113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301402112}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
+--- !u!1 &305453853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 6362425303183630006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &305453854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305453853}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!4 &315413298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -22721,7 +22841,7 @@ GameObject:
   - component: {fileID: 322748620}
   m_Layer: 0
   m_Name: Lava (2)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22791,7 +22911,7 @@ GameObject:
   - component: {fileID: 371277205}
   m_Layer: 0
   m_Name: Lava (8)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22877,7 +22997,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &391752419
 BoxCollider2D:
@@ -36828,6 +36948,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &458831829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 189317357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &458831830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458831829}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &477514336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41861,6 +42005,30 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &542675509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1001284869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &542675510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542675509}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &559930793
 GameObject:
   m_ObjectHideFlags: 0
@@ -51667,7 +51835,7 @@ GameObject:
   - component: {fileID: 612186687}
   m_Layer: 0
   m_Name: Lava (6)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51724,6 +51892,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &613970174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 477514336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &613970175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613970174}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
+--- !u!1 &614963902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 667871713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &614963903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614963902}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &624253435
 GameObject:
   m_ObjectHideFlags: 0
@@ -56491,7 +56707,7 @@ GameObject:
   - component: {fileID: 632221426}
   m_Layer: 0
   m_Name: Lava (14)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56623,6 +56839,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 667871713}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &668088251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 560928059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &668088252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668088251}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &668254729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56638,12 +56878,12 @@ PrefabInstance:
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.603798
+      value: 25.29
       objectReference: {fileID: 0}
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.367157
+      value: 19.56
       objectReference: {fileID: 0}
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
@@ -56711,7 +56951,7 @@ GameObject:
   - component: {fileID: 682384963}
   m_Layer: 0
   m_Name: Lava (7)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56781,7 +57021,7 @@ GameObject:
   - component: {fileID: 729762421}
   m_Layer: 0
   m_Name: Lava (1)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56896,6 +57136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807607519}
   - component: {fileID: 807607520}
+  - component: {fileID: 807607521}
   m_Layer: 0
   m_Name: collider (7)
   m_TagString: colliders
@@ -56915,7 +57156,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &807607520
 BoxCollider2D:
@@ -56943,6 +57184,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &807607521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807607518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 1938241588}
+  - {fileID: 458831829}
+  maxMobs: 0
+--- !u!1 &822502847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1008662156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &822502848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822502847}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &872262137
 GameObject:
   m_ObjectHideFlags: 0
@@ -56956,7 +57241,7 @@ GameObject:
   - component: {fileID: 872262139}
   m_Layer: 0
   m_Name: Lava (5)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57013,6 +57298,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &878527654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1223308220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &878527655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878527654}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &883969752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57088,63 +57397,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 883969752}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &887984375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 887984376}
-  - component: {fileID: 887984377}
-  m_Layer: 0
-  m_Name: collider (10)
-  m_TagString: colliders
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &887984376
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887984375}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.87, y: -1.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1546984759}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &887984377
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887984375}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08055997, y: -0.1544056}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9667125, y: 0.42265892}
-  m_EdgeRadius: 0
 --- !u!1 &910497640
 GameObject:
   m_ObjectHideFlags: 0
@@ -61987,7 +62239,7 @@ GameObject:
   - component: {fileID: 988875312}
   m_Layer: 0
   m_Name: Lava (13)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62146,7 +62398,7 @@ PrefabInstance:
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.754404
+      value: 15.44
       objectReference: {fileID: 0}
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
@@ -67241,7 +67493,7 @@ GameObject:
   - component: {fileID: 1062862455}
   m_Layer: 0
   m_Name: Lava (4)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67311,7 +67563,7 @@ GameObject:
   - component: {fileID: 1123185018}
   m_Layer: 0
   m_Name: Lava (9)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67397,7 +67649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1126143885
 BoxCollider2D:
@@ -76962,7 +77214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1189073590
 BoxCollider2D:
@@ -76990,6 +77242,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!1 &1202698433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1245609778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202698434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202698433}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &1213801535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77152,6 +77428,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MobSpawn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77290,6 +77571,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1264005551}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1350315528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 883969752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1350315529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350315528}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1368105978
 GameObject:
   m_ObjectHideFlags: 0
@@ -77534,12 +77839,14 @@ MonoBehaviour:
   moveHorizontal: 0
   moveVertical: 0
   speed: 2.5
+  health: 0
   plr_body: {fileID: 1368105981}
   sprite_renderer: {fileID: 1368105979}
   plr_sprites: []
   AnimateRunBaseIndex: 0
   anim_frame: 0
   canShoot: 0
+  isAlive: 0
   proj: {fileID: 2139472892570551724, guid: 24a66639dacc4e7409db0cec6563b6f2, type: 3}
   plr_dir: {x: 0, y: 0, z: 0}
   gunShot: {fileID: 8300000, guid: b50b2fa29a03ad040860e1bb5937221f, type: 3}
@@ -77574,7 +77881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1401391166
 BoxCollider2D:
@@ -82369,7 +82676,7 @@ GameObject:
   - component: {fileID: 1428030095}
   m_Layer: 0
   m_Name: Lava (3)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82500,7 +82807,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546984759}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1447505592
 BoxCollider2D:
@@ -82528,6 +82835,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!1 &1475696658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1213801535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1475696659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475696658}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1487079427
 GameObject:
   m_ObjectHideFlags: 0
@@ -82541,7 +82872,7 @@ GameObject:
   - component: {fileID: 1487079429}
   m_Layer: 0
   m_Name: Lava (16)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82660,16 +82991,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1670177939}
-  - {fileID: 1637800635}
   - {fileID: 1126143884}
   - {fileID: 391752418}
   - {fileID: 1447505591}
   - {fileID: 1401391165}
-  - {fileID: 2048064775}
   - {fileID: 807607519}
   - {fileID: 125977791}
   - {fileID: 1189073589}
-  - {fileID: 887984376}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87427,6 +87755,54 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1585803378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 2075155450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1585803379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585803378}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
+--- !u!1 &1587667056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 114259063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1587667057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587667056}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &1614573446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87447,7 +87823,7 @@ PrefabInstance:
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.420452
+      value: 15.49
       objectReference: {fileID: 0}
     - target: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
         type: 3}
@@ -87502,63 +87878,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1614573446}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1637800634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1637800635}
-  - component: {fileID: 1637800636}
-  m_Layer: 0
-  m_Name: collider (1)
-  m_TagString: colliders
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1637800635
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637800634}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.89, y: 11.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1546984759}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1637800636
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637800634}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08055997, y: -0.1544056}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9667125, y: 0.42265892}
-  m_EdgeRadius: 0
 --- !u!1 &1670177938
 GameObject:
   m_ObjectHideFlags: 0
@@ -92383,7 +92702,7 @@ GameObject:
   - component: {fileID: 1710242372}
   m_Layer: 0
   m_Name: Lava (12)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92507,7 +92826,7 @@ GameObject:
   - component: {fileID: 1724764325}
   m_Layer: 0
   m_Name: Lava (10)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97318,6 +97637,30 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1730765658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1018848308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1730765659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730765658}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1734749793
 GameObject:
   m_ObjectHideFlags: 0
@@ -102072,6 +102415,30 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1754303911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1614573446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1754303912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754303911}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1774384274
 GameObject:
   m_ObjectHideFlags: 0
@@ -102085,7 +102452,7 @@ GameObject:
   - component: {fileID: 1774384276}
   m_Layer: 0
   m_Name: Lava (11)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102142,6 +102509,321 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1827838140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 41883249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827838141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827838140}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
+--- !u!1 &1867344332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1264005551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867344333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867344332}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
+--- !u!1 &1869353798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869353804}
+  - component: {fileID: 1869353803}
+  - component: {fileID: 1869353802}
+  - component: {fileID: 1869353801}
+  - component: {fileID: 1869353800}
+  - component: {fileID: 1869353799}
+  m_Layer: 0
+  m_Name: zombie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1869353799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869353798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9224e7b28dffef438378dabd4ca703d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  isAlive: 0
+--- !u!82 &1869353800
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869353798}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!61 &1869353801
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869353798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.013440773, y: -0.6}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 0.32, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.34688154, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!50 &1869353802
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869353798}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &1869353803
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869353798}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 6019453725058403666, guid: 43eb5eb6ee8b4e849ab4b2293d44d983,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1869353804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869353798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.75, y: -4.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1875000336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 522782967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1875000337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875000336}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &1879490311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102427,6 +103109,30 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &1938241588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 11361807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1938241589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938241588}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1950562276
 GameObject:
   m_ObjectHideFlags: 0
@@ -107181,6 +107887,30 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1957998943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029739287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1957998944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957998943}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1970947030
 GameObject:
   m_ObjectHideFlags: 0
@@ -111948,7 +112678,7 @@ GameObject:
   - component: {fileID: 1972811184}
   m_Layer: 0
   m_Name: Lava (17)
-  m_TagString: Untagged
+  m_TagString: lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112039,63 +112769,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!1 &2048064774
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2048064775}
-  - component: {fileID: 2048064776}
-  m_Layer: 0
-  m_Name: collider (6)
-  m_TagString: colliders
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2048064775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048064774}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.13, y: 4.24, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1546984759}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2048064776
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048064774}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.08055997, y: -0.1544056}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9667125, y: 0.42265892}
-  m_EdgeRadius: 0
 --- !u!1001 &2075155450
 PrefabInstance:
   m_ObjectHideFlags: 0
