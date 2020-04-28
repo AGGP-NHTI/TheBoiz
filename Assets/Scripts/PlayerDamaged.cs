@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerDamaged : State
 {
     private Color damagedColor, normalColor;
+    private bool damaged;
+    private float delay = 0.5f;
+    float currentDelay = 0f;
 
     public PlayerDamaged(PlayerStateMachine sm) : base(sm)
     {
@@ -13,19 +16,29 @@ public class PlayerDamaged : State
 
     public override void OnStateEnter()
     {
-        normalColor = stateMachine.sprite_renderer.color;
+        normalColor = new Color(1.0f, 1.0f, 1.0f);
         damagedColor = new Color(1.0f, 0.24f, 0.24f); // Red
+        damaged = true;
+        currentDelay = Time.time + delay;
     }
 
     public override void Tick()
     {
-        Color currentColor = Color.Lerp(normalColor, damagedColor, 0.2f);
-        stateMachine.sprite_renderer.color = currentColor;
+        CheckPlayerStatus();
+    }
 
-        // Now go back
-        currentColor = Color.Lerp(damagedColor, normalColor, 0.2f);
-        stateMachine.sprite_renderer.color = currentColor;
+    void CheckPlayerStatus()
+    {
+        if (damaged)
+        {
+            stateMachine.sprite_renderer.color = damagedColor;
 
-        stateMachine.SetState(null);
+            if (Time.time > currentDelay)
+            {
+                stateMachine.sprite_renderer.color = normalColor;
+                damaged = false;
+                stateMachine.SetState(null);
+            }
+        }
     }
 }
