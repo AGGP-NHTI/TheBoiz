@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -218,7 +218,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 0}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &41883249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,7 +317,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1670177940}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &114259063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -616,7 +618,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1189073590}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &201363570
 GameObject:
   m_ObjectHideFlags: 0
@@ -22793,7 +22796,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 391752419}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &305453853 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -22816,7 +22820,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1670177940}
+  spawners: []
+  maxMobs: 0
 --- !u!4 &315413298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -36965,7 +36970,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 807607520}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &477514336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42021,7 +42027,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1447505592}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &559930793
 GameObject:
   m_ObjectHideFlags: 0
@@ -51907,7 +51914,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1670177940}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &614963902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -51930,7 +51938,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1401391166}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &624253435
 GameObject:
   m_ObjectHideFlags: 0
@@ -56852,7 +56861,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1189073590}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &668254729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57126,6 +57136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807607519}
   - component: {fileID: 807607520}
+  - component: {fileID: 807607521}
   m_Layer: 0
   m_Name: collider (7)
   m_TagString: colliders
@@ -57173,6 +57184,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &807607521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807607518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 1938241588}
+  - {fileID: 458831829}
+  maxMobs: 0
 --- !u!1 &822502847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -57195,7 +57226,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 125977792}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &872262137
 GameObject:
   m_ObjectHideFlags: 0
@@ -57288,7 +57320,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1401391166}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &883969752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77231,7 +77264,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1670177940}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &1213801535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77554,7 +77588,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1126143885}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1368105978
 GameObject:
   m_ObjectHideFlags: 0
@@ -82817,7 +82852,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1670177940}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1487079427
 GameObject:
   m_ObjectHideFlags: 0
@@ -87736,7 +87772,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 391752419}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1587667056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -87759,7 +87796,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1401391166}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &1614573446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97616,7 +97654,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1126143885}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1734749793
 GameObject:
   m_ObjectHideFlags: 0
@@ -102393,7 +102432,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1447505592}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1774384274
 GameObject:
   m_ObjectHideFlags: 0
@@ -102486,7 +102526,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1126143885}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1867344332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -102509,7 +102550,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1447505592}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1869353798
 GameObject:
   m_ObjectHideFlags: 0
@@ -102775,7 +102817,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1126143885}
+  spawners: []
+  maxMobs: 0
 --- !u!1001 &1879490311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103083,7 +103126,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 807607520}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1950562276
 GameObject:
   m_ObjectHideFlags: 0
@@ -107860,7 +107904,8 @@ MonoBehaviour:
   Zombie: {fileID: 0}
   Cultist: {fileID: 0}
   Bleemeay: {fileID: 0}
-  collider: {fileID: 1670177940}
+  spawners: []
+  maxMobs: 0
 --- !u!1 &1970947030
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,6 +54,12 @@ public class TakeDamage : State
             if(isZombie)
             {
                 zmStateMachine.health -= 10;
+
+                if(zmStateMachine.health <- 0)
+                {
+                    zmStateMachine.isAlive = false;
+                }
+
                 damaged = false;
                 zmStateMachine.SetState(null);
             }
