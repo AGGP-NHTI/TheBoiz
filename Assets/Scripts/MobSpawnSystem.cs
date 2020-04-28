@@ -11,29 +11,40 @@ public class MobSpawnSystem : MonoBehaviour
     int Selection;
     public GameObject[] spawners;
     public int maxMobs;
+    public bool isactive;
     
     // Start is called before the first frame update
     void Start()
     {
-        Selection = Random.Range(0, 2);
+        isactive = true;
     }
 
     // Update is called once per frame
-    void Update()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-       if(Selection == 0)
-       {
-            SpawnZombie();
-       }
-       if(Selection == 1)
-       {
-            SpawnCultist();
-       }
-       if(Selection == 2)
-       {
-            SpawnBleemeay();
-       }
-    }
+        if (collision.transform.GetComponentInParent<PlayerStateMachine>())
+        {
+            if (isactive == true)
+            {
+                Selection = Random.Range(0, 2);
+
+                if (Selection == 0)
+                {
+                    SpawnZombie();
+                }
+                if (Selection == 1)
+                {
+                    SpawnCultist();
+                }
+                if (Selection == 2)
+                {
+                    SpawnBleemeay();
+                }
+                
+            }
+            isactive = false;
+        }
+    }  
 
     public void SpawnBleemeay()
     {

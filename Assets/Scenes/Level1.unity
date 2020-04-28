@@ -220,6 +220,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &41883249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -319,6 +320,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &114259063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -404,6 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125977791}
   - component: {fileID: 125977792}
+  - component: {fileID: 125977793}
   m_Layer: 0
   m_Name: collider (8)
   m_TagString: colliders
@@ -451,6 +454,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &125977793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125977790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 822502847}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &150071019
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +643,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &201363570
 GameObject:
   m_ObjectHideFlags: 0
@@ -22798,6 +22822,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &305453853 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -22822,6 +22847,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!4 &315413298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7405297524900071965, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -22978,6 +23004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391752418}
   - component: {fileID: 391752419}
+  - component: {fileID: 391752420}
   m_Layer: 0
   m_Name: collider (3)
   m_TagString: colliders
@@ -23025,6 +23052,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &391752420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391752417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 1585803378}
+  - {fileID: 301402112}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &393897290
 GameObject:
   m_ObjectHideFlags: 0
@@ -36972,6 +37020,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &477514336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42029,6 +42078,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &559930793
 GameObject:
   m_ObjectHideFlags: 0
@@ -51916,6 +51966,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &614963902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -51940,6 +51991,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &624253435
 GameObject:
   m_ObjectHideFlags: 0
@@ -56863,6 +56915,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &668254729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57137,6 +57190,7 @@ GameObject:
   - component: {fileID: 807607519}
   - component: {fileID: 807607520}
   - component: {fileID: 807607521}
+  - component: {fileID: 807607522}
   m_Layer: 0
   m_Name: collider (7)
   m_TagString: colliders
@@ -57204,6 +57258,26 @@ MonoBehaviour:
   - {fileID: 1938241588}
   - {fileID: 458831829}
   maxMobs: 0
+  isactive: 0
+--- !u!114 &807607522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807607518}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners: []
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &822502847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -57228,6 +57302,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &872262137
 GameObject:
   m_ObjectHideFlags: 0
@@ -57322,6 +57397,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &883969752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67630,6 +67706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126143884}
   - component: {fileID: 1126143885}
+  - component: {fileID: 1126143886}
   m_Layer: 0
   m_Name: collider (2)
   m_TagString: colliders
@@ -67677,6 +67754,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &1126143886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126143883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 1730765658}
+  - {fileID: 1827838140}
+  - {fileID: 1350315528}
+  - {fileID: 1875000336}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &1137745761
 GameObject:
   m_ObjectHideFlags: 0
@@ -77195,6 +77295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189073589}
   - component: {fileID: 1189073590}
+  - component: {fileID: 1189073591}
   m_Layer: 0
   m_Name: collider (9)
   m_TagString: colliders
@@ -77242,6 +77343,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &1189073591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189073588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 668088251}
+  - {fileID: 192678303}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &1202698433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -77266,6 +77388,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &1213801535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77595,6 +77718,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1368105978
 GameObject:
   m_ObjectHideFlags: 0
@@ -77862,6 +77986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1401391165}
   - component: {fileID: 1401391166}
+  - component: {fileID: 1401391167}
   m_Layer: 0
   m_Name: collider (5)
   m_TagString: colliders
@@ -77909,6 +78034,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &1401391167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401391164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 614963902}
+  - {fileID: 1587667056}
+  - {fileID: 878527654}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &1419468239
 GameObject:
   m_ObjectHideFlags: 0
@@ -82788,6 +82935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1447505591}
   - component: {fileID: 1447505592}
+  - component: {fileID: 1447505593}
   m_Layer: 0
   m_Name: collider (4)
   m_TagString: colliders
@@ -82835,6 +82983,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &1447505593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447505590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 1754303911}
+  - {fileID: 542675509}
+  - {fileID: 1867344332}
+  - {fileID: 18722165}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &1475696658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -82859,6 +83030,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1487079427
 GameObject:
   m_ObjectHideFlags: 0
@@ -87779,6 +87951,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1587667056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -87803,6 +87976,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &1614573446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87888,6 +88062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670177939}
   - component: {fileID: 1670177940}
+  - component: {fileID: 1670177941}
   m_Layer: 0
   m_Name: collider
   m_TagString: colliders
@@ -87935,6 +88110,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9667125, y: 0.42265892}
   m_EdgeRadius: 0
+--- !u!114 &1670177941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670177938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba74936ab2e9ed84799b39ac061ac021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPos: {fileID: 0}
+  Zombie: {fileID: 0}
+  Cultist: {fileID: 0}
+  Bleemeay: {fileID: 0}
+  spawners:
+  - {fileID: 305453853}
+  - {fileID: 613970174}
+  - {fileID: 1202698433}
+  - {fileID: 101985104}
+  - {fileID: 1957998943}
+  - {fileID: 1475696658}
+  maxMobs: 0
+  isactive: 0
 --- !u!1 &1673234853
 GameObject:
   m_ObjectHideFlags: 0
@@ -97661,6 +97861,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1734749793
 GameObject:
   m_ObjectHideFlags: 0
@@ -102439,6 +102640,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1774384274
 GameObject:
   m_ObjectHideFlags: 0
@@ -102533,6 +102735,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1867344332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4203761124952424572, guid: 7b9556dd7f8c9774a83f5011bb12c8ed,
@@ -102557,6 +102760,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1869353798
 GameObject:
   m_ObjectHideFlags: 0
@@ -102824,6 +103028,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1001 &1879490311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103133,6 +103338,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1950562276
 GameObject:
   m_ObjectHideFlags: 0
@@ -107911,6 +108117,7 @@ MonoBehaviour:
   Bleemeay: {fileID: 0}
   spawners: []
   maxMobs: 0
+  isactive: 0
 --- !u!1 &1970947030
 GameObject:
   m_ObjectHideFlags: 0
