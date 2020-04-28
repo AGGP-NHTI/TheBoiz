@@ -10,6 +10,13 @@ public class Lava : MonoBehaviour
         
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.transform.GetComponentInParent<PlayerStateMachine>())
+        {
+
+        }
+    }
     // Update is called once per frame
     void Update()
     {
