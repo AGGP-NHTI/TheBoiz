@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ZombieStateMachine : MonoBehaviour
 {
-    public int health;
+    public float health;
     public bool isAlive;
 
-    public int lastDamageAmt; // Value of the last amount of damage taken -- so we can pass in proper weapon damage
+    public float lastDamageAmt; // Value of the last amount of damage taken -- so we can pass in proper weapon damage
 
     public State currentState;
 

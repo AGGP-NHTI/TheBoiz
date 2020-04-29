@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileScript : MonoBehaviour
 {
     public float velocity;
-    public int damage;
+    public float damage;
     public Rigidbody2D body;
     public AudioClip impact;
     public GameObject audio_player;
