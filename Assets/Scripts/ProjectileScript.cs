@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileScript : MonoBehaviour
 {
     public float velocity;
-    public float damage;
+    public int damage;
     public Rigidbody2D body;
     public AudioClip impact;
     public GameObject audio_player;
@@ -28,13 +28,14 @@ public class ProjectileScript : MonoBehaviour
             else
             {
                 PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
-
+                psm.lastDamageAmt = damage;
                 psm.SetState(new TakeDamage(psm));
             }
         }
         else if(collision.transform.GetComponentInParent<ZombieStateMachine>())
         {
             ZombieStateMachine zsm = collision.transform.GetComponentInParent<ZombieStateMachine>();
+            zsm.lastDamageAmt = damage;
             zsm.SetState(new TakeDamage(zsm));
             Destroy(gameObject);
         }

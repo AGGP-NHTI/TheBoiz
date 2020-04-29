@@ -9,6 +9,8 @@ public class PlayerStateMachine : MonoBehaviour
     public float moveVertical;
     public float speed, health;
 
+    public int lastDamageAmt; // Value of the last amount of damage taken -- so we can pass in proper weapon damage
+
     public Rigidbody2D plr_body;
     private Vector2 movement;
     
