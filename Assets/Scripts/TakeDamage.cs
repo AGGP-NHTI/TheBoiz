@@ -43,6 +43,7 @@ public class TakeDamage : State
             if(isPlayer)
             {
                 stateMachine.sprite_renderer.color = damagedColor;
+                stateMachine.health -= stateMachine.lastDamageAmt;
 
                 if (Time.time > currentDelay)
                 {
@@ -53,7 +54,7 @@ public class TakeDamage : State
             }
             if(isZombie)
             {
-                zmStateMachine.health -= 10;
+                zmStateMachine.health -= zmStateMachine.lastDamageAmt;
 
                 if(zmStateMachine.health <- 0)
                 {
