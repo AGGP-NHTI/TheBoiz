@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TXTimport : MonoBehaviour
+public class TXTImport : MonoBehaviour
 {
     public TextAsset txtFile;
     public string[] txtLines;
     // Start is called before the first frame update
     void Start()
     {
-        if (txtFile != null)
+        if(txtFile != null)
         {
             txtLines = (txtFile.text.Split('\n'));
         }
@@ -18,7 +18,6 @@ public class TXTimport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
-
