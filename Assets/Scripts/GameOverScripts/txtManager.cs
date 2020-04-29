@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class TXTscript : MonoBehaviour
+public class txtManager : MonoBehaviour
 {
     public GameObject txtBox;
     public Text txt;
@@ -15,24 +14,26 @@ public class TXTscript : MonoBehaviour
     public string[] txtLines;
 
     public bool isActive;
-    public bool stopMov;
-
-    public movement Pmov;
-
-    public Branch scr;
 
     private bool isType = false;
     private bool cancType;
     public float typeSpeed;
 
-    public bool isBranch = false;
-    public int count = 0;
+    public Branch bra;
 
+    public GameObject coin1;
+    public GameObject coin2;
+    public GameObject coin3;
+    public int coinPoss = 3;
+
+    // Start is called before the first frame update
     void Start()
     {
-        Pmov = FindObjectOfType<movement>();
+        bra = FindObjectOfType<Branch>();
 
-        scr = FindObjectOfType<Branch>();
+        coin1.SetActive(false);
+        coin2.SetActive(false);
+        coin3.SetActive(false);
 
         if (txtFile != null)
         {
@@ -54,6 +55,7 @@ public class TXTscript : MonoBehaviour
         }
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (!isActive)
@@ -69,6 +71,13 @@ public class TXTscript : MonoBehaviour
             {
                 curL += 1;
 
+                if(curL == 10)
+                {
+                    coin1.SetActive(true);
+                    coin2.SetActive(true);
+                    coin3.SetActive(true);
+                }
+
                 if (curL > endL)
                 {
                     disableTXTbox();
@@ -81,9 +90,8 @@ public class TXTscript : MonoBehaviour
             else if (isType && !cancType)
             {
                 cancType = true;
-               
             }
-        } 
+        }
     }
 
     private IEnumerator txtScroll(string lineOtxt)
@@ -92,7 +100,7 @@ public class TXTscript : MonoBehaviour
         txt.text = "";
         isType = true;
 
-        while(isType && !cancType && (letter < lineOtxt.Length - 1))
+        while (isType && !cancType && (letter < lineOtxt.Length - 1))
         {
             txt.text += lineOtxt[letter];
             letter += 1;
@@ -108,51 +116,19 @@ public class TXTscript : MonoBehaviour
         txtBox.SetActive(true);
         isActive = true;
 
-        if (stopMov)
-        {
-            Pmov.canMov = false;
-        }
-
         StartCoroutine(txtScroll(txtLines[curL]));
     }
 
     public void disableTXTbox()
     {
-        if (isBranch)
-        {
-            count += 1;
-            scr.next();
-            
-            if (count == 2)
-            {
-                txtBox.SetActive(false);
-                scr.choice2();
-            }
-            if (count == 3)
-            {
-                txtBox.SetActive(false);
-                scr.choice3();
-            }
-            if (count == 4)
-            {
-                txtBox.SetActive(false);
-                scr.choice4();
-            }
-            if(count == 5)
-            {
-                txtBox.SetActive(false);
-                scr.killed();
-            }
-            if (count > 10)
-            {
-                txtBox.SetActive(false);
-            }
-        }
-        if(!isBranch)
+        if(!bra.isBra)
         {
             txtBox.SetActive(false);
-            isActive = false;
-            Pmov.canMov = true;
+        }
+        if (bra.isBra)
+        {
+            bra.giveCoi();
+            txtBox.SetActive(false);
         }
     }
 
