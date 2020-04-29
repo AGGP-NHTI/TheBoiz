@@ -40,23 +40,28 @@ public class MobSpawnSystem : MonoBehaviour
                 {
                     SpawnBleemeay();
                 }
-                
+                Debug.Log("I am here");
+                isactive = false;
+
             }
-            isactive = false;
+
         }
-    }  
+    }
 
     public void SpawnBleemeay()
     {
         Instantiate(Bleemeay, transform.position, Quaternion.identity);
+
     }
     public void SpawnCultist()
     {
         Instantiate(Cultist, transform.position, Quaternion.identity);
+
     }
     public void SpawnZombie()
     {
         Instantiate(Zombie, transform.position, Quaternion.identity);
+
     }
 }
 
