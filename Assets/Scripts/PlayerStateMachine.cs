@@ -13,7 +13,7 @@ public class PlayerStateMachine : MonoBehaviour
 
     public Rigidbody2D plr_body;
     private Vector2 movement;
-    
+
 
     public State currentState;
     private string currentStateType;
@@ -51,12 +51,12 @@ public class PlayerStateMachine : MonoBehaviour
         isAlive = true;
     }
 
-    
+
     void Update()
     {
         step();
 
-        if(currentState != null)
+        if (currentState != null)
         {
             currentState.Tick();
         }
@@ -64,9 +64,9 @@ public class PlayerStateMachine : MonoBehaviour
         playerMovement();
 
         //States
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
-            if(canShoot)
+            if (canShoot)
             {
                 canShoot = false;
                 SetState(new PlayerShoot(this));
@@ -76,18 +76,17 @@ public class PlayerStateMachine : MonoBehaviour
         updateWalkingFrame();
 
         spriteAngle();
-
     }
 
     public void SetState(State state)
     {
-        if(state!=null)
+        if (state != null)
         {
             state.OnStateExit();
         }
         currentState = state;
         //currentStateType = currentState.GetType().Name;
-        if(currentState != null)
+        if (currentState != null)
         {
             currentState.OnStateEnter();
         }

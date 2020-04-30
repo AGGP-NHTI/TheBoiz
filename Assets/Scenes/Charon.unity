@@ -234,13 +234,14 @@ MonoBehaviour:
   txtFile: {fileID: 4900000, guid: 393899dfccbbff14791cbe19db3f6b72, type: 3}
   txtLines: []
   GameOver: {fileID: 1304739772}
-  coin1: {fileID: 1238994831}
+  coin1: {fileID: 1205021348}
   coin2: {fileID: 1269873423}
-  coin3: {fileID: 1205021348}
+  coin3: {fileID: 1238994831}
   Byes: {fileID: 301882216}
   Bno: {fileID: 1148203227}
   isYes: 0
   isNo: 0
+  coinCount: 0
 --- !u!4 &255205618
 Transform:
   m_ObjectHideFlags: 0
@@ -3926,7 +3927,7 @@ GameObject:
   - component: {fileID: 1205021351}
   - component: {fileID: 1205021350}
   m_Layer: 5
-  m_Name: 3
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4102,7 +4103,7 @@ GameObject:
   - component: {fileID: 1238994834}
   - component: {fileID: 1238994833}
   m_Layer: 5
-  m_Name: 1
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

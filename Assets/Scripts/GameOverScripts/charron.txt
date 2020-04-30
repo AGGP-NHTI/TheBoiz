@@ -6,17 +6,31 @@ Let's just say I'm a friend, and you are on my boat.
 We are in a place between two planes. 
 My job is to ferry people between the two planes.
 Oh...
-I see my friend has bestowed a gift opon you.
-If you give be one gold tallon. 
-I could bring you back to the plane in which you came from.
+I see my friend has bestowed a gift apon you.
+If you give me one Gold Tallon. 
+I could bring you back to the plane in which you came.
 You see child, I am quite a lazy fellow and my job has become quite hard as of late.
-There are so many others that wait to cross and I am just one person.
-So what do say, Help me help you.
+There are so many others that wait to cross, and I am just one person.
+So what do say. Help me, help you.
 
-yes
+	yes
 Plesser doing buisness with you child...
 
-no 
+	no 
 Hmph...
-Have it your then, better enjoy the view while you still can...
+Have it your way child.
+
+	Less then 3 coins
+Oh? Welcome back child...
+I did not expect to see you so soon. 
+If you give me one Gold Tallon. 
+I could bring you back to the plane in which you came.
+So what do say. Help me, help you.
+
+	Zero coins
+Welcome back child...
+If you... Oh I see you are out of Gold Tallon.
+I'm afraid since you're out of Tallons, I no longer have any incentive too help.
+Now sit there and keep quiet.
+
 the end

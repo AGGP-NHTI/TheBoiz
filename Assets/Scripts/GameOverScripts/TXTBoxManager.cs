@@ -25,8 +25,10 @@ public class TXTBoxManager : MonoBehaviour
 
     public bool isYes = false;
     public bool isNo = false;
-
+    
     int count = 0;
+
+    public int coinCount;
 
     void Start()
     {
@@ -39,6 +41,8 @@ public class TXTBoxManager : MonoBehaviour
 
         GameOver.SetActive(false);
 
+        coinCount = PlayerPrefs.GetInt("Coins");
+
         if (txtFile != null)
         {
             txtLines = (txtFile.text.Split('\n'));
@@ -47,6 +51,21 @@ public class TXTBoxManager : MonoBehaviour
         if (endL == 0)
         {
             endL = txtLines.Length - 1;
+        }
+
+        if (coinCount == 1 || coinCount == 2)
+        {
+            curL = 23;
+            endL = 27;
+        }
+
+        if (coinCount == 0)
+        {
+            curL = 30;
+            endL = 33;
+
+            count += 1;
+            isNo = true;
         }
     }
 
@@ -59,11 +78,23 @@ public class TXTBoxManager : MonoBehaviour
             curL += 1;
         }
 
-        if (curL == 9)
+        if (curL == 9|| curL == 25)
         {
-            coin1.SetActive(true);
-            coin2.SetActive(true);
-            coin3.SetActive(true);
+            if (coinCount == 3)
+            {
+                coin1.SetActive(true);
+                coin2.SetActive(true);
+                coin3.SetActive(true);
+            }
+            if (coinCount == 2)
+            {
+                coin1.SetActive(true);
+                coin2.SetActive(true);
+            }
+            if (coinCount == 1)
+            {
+                coin2.SetActive(true);
+            }
         }
 
         if (curL > endL)
@@ -86,10 +117,24 @@ public class TXTBoxManager : MonoBehaviour
     {
         txtBox.SetActive(true);
 
-        Destroy(coin1);
+        if (coinCount == 3)
+        {
+            Destroy(coin3);
+        }
+        if (coinCount == 2)
+        {
+            Destroy(coin1);
+        }
+        if (coinCount == 1)
+        {
+            Destroy(coin2);
+        }
 
         curL = 16;
         endL = 16;
+
+        coinCount--;
+        PlayerPrefs.SetInt("Coins", coinCount);
 
         count += 1;
 
@@ -127,7 +172,7 @@ public class TXTBoxManager : MonoBehaviour
 
         if (isYes == true)
         {
-            Debug.Log("fuck you ISyes");
+            SceneManager.LoadScene(1);
         }
     }
 }

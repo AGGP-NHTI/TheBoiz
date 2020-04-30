@@ -5,12 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    /*********************************/
+    /*Hey guys its james im just working on the Game over scean*/
+    public int coinPoss;
+    /******************************************/
+
     public void playgame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        /*********************************/
+        /*Hey guys its james im just working on the Game over scean*/
+        PlayerPrefs.SetInt("Coins", coinPoss);
+        /******************************************/
     }
 
-    public void quitgame()
+public void quitgame()
     {
         Application.Quit();
     }
