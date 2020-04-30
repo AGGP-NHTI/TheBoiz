@@ -26,19 +26,22 @@ public class MobSpawnSystem : MonoBehaviour
         {
             if (isactive == true)
             {
-                Selection = Random.Range(0, 2);
+                foreach (GameObject spawn in spawners)
+                {
+                    Selection = Random.Range(0, 2);
 
-                if (Selection == 0)
-                {
-                    SpawnZombie();
-                }
-                if (Selection == 1)
-                {
-                    SpawnCultist();
-                }
-                if (Selection == 2)
-                {
-                    SpawnBleemeay();
+                    if (Selection == 0)
+                    {
+                        SpawnZombie(spawn.transform);
+                    }
+                    if (Selection == 1)
+                    {
+                        SpawnCultist(spawn.transform);
+                    }
+                    if (Selection == 2)
+                    {
+                        SpawnBleemeay(spawn.transform);
+                    }
                 }
                 Debug.Log("I am here");
                 isactive = false;
@@ -47,19 +50,19 @@ public class MobSpawnSystem : MonoBehaviour
         }
     }
 
-    public void SpawnBleemeay()
+    public void SpawnBleemeay(Transform spawnLoc)
     {
-        Instantiate(Bleemeay, transform.position, Quaternion.identity);
+        Instantiate(Bleemeay, spawnLoc.position, Quaternion.identity);
 
     }
-    public void SpawnCultist()
+    public void SpawnCultist(Transform spawnLoc)
     {
-        Instantiate(Cultist, transform.position, Quaternion.identity);
+        Instantiate(Cultist, spawnLoc.position, Quaternion.identity);
 
     }
-    public void SpawnZombie()
+    public void SpawnZombie(Transform spawnLoc)
     {
-        Instantiate(Zombie, transform.position, Quaternion.identity);
+        Instantiate(Zombie, spawnLoc.position, Quaternion.identity);
 
     }
 }
