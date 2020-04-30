@@ -15,7 +15,10 @@ public class ZombieStateMachine : MonoBehaviour
     {
         currentState = null;
         health = 100;
+        isAlive = true;
         lastDamageAmt = 0;
+
+        SetState(new Wander(this));
     }
 
     private void Update()
