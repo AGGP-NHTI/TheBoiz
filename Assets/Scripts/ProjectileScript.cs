@@ -12,13 +12,11 @@ public class ProjectileScript : MonoBehaviour
 
     public GameObject owner;
 
-    private void Awake()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        Debug.Log("!");
+
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
             if (owner.GetComponent<PlayerStateMachine>())
