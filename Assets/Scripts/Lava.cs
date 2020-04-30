@@ -21,8 +21,10 @@ public class Lava : MonoBehaviour
             collision.transform.GetComponentInParent<PlayerStateMachine>().isAlive = false;
             /*********************************/
             /*Hey guys its james im just working on the Game over scean*/
-            Destroy(collision);
-            SceneManager.LoadScene("Charon");
+            if (collision.name == "player")
+            {
+                SceneManager.LoadScene("Charon");
+            }
             /******************************************/
         }
     }
