@@ -120,10 +120,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 0
   damage: 35
-  body: {fileID: -2498362331790587335}
+  body: {fileID: 0}
   impact: {fileID: 8300000, guid: 5b665ff3c112348449b2a87d5515a3ea, type: 3}
   audio_player: {fileID: 122141786851122267, guid: a3292922f78182c488b6943e16e0d1f1,
     type: 3}
+  owner: {fileID: 0}
 --- !u!58 &4883737239247349873
 CircleCollider2D:
   m_ObjectHideFlags: 0
