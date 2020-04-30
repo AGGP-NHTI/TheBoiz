@@ -22,7 +22,11 @@ public class MobSpawnSystem : MonoBehaviour
     // Update is called once per frame
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.GetComponentInParent<PlayerStateMachine>())
+        if (collision.transform.GetComponent<ProjectileScript>())
+        {
+
+        }
+        else if (collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
             if (isactive == true)
             {
