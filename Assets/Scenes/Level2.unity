@@ -394,9 +394,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 325219288}
   maxMobs: 0
@@ -16326,9 +16327,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 798516908}
   maxMobs: 0
@@ -16791,9 +16793,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 1942864761}
   - {fileID: 303505110}
@@ -17483,9 +17486,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 253277842}
   - {fileID: 1873673987}
@@ -17871,7 +17875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764322190}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &443292297
 MonoBehaviour:
@@ -17886,9 +17890,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 1430261225}
   - {fileID: 1373404420}
@@ -18665,9 +18670,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 2115929872}
   maxMobs: 0
@@ -18962,13 +18968,13 @@ Transform:
   m_LocalPosition: {x: -3.1306238, y: -9.195666, z: -204.10547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1225362370}
-  - {fileID: 1519455453}
-  - {fileID: 443292296}
-  - {fileID: 704198473}
-  - {fileID: 1894262824}
-  - {fileID: 1477827773}
   - {fileID: 1245850823}
+  - {fileID: 1477827773}
+  - {fileID: 1894262824}
+  - {fileID: 704198473}
+  - {fileID: 443292296}
+  - {fileID: 1519455453}
+  - {fileID: 1225362370}
   - {fileID: 769676295}
   - {fileID: 1489923617}
   - {fileID: 1720514735}
@@ -19100,9 +19106,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 606142216}
   maxMobs: 0
@@ -21122,7 +21129,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764322190}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1225362371
 BoxCollider2D:
@@ -21163,9 +21170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 526854017}
   - {fileID: 738357842}
@@ -44612,7 +44620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764322190}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1245850824
 MonoBehaviour:
@@ -44627,9 +44635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 526854017}
   - {fileID: 738357842}
@@ -45973,7 +45982,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764322190}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1477827775
 MonoBehaviour:
@@ -45988,9 +45997,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 291813469}
   - {fileID: 1177931973}
@@ -46144,9 +46154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 178929694}
   - {fileID: 2025677843}
@@ -46299,9 +46310,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 1088772477}
   - {fileID: 1053672291}
@@ -46363,7 +46375,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764322190}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1519455454
 MonoBehaviour:
@@ -46378,9 +46390,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 1841100185}
   - {fileID: 1186592745}
@@ -47294,9 +47307,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 1200856010}
   maxMobs: 0
@@ -48034,7 +48048,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 764322190}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1894262825
 MonoBehaviour:
@@ -48049,9 +48063,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPos: {fileID: 0}
-  Zombie: {fileID: 0}
+  Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 0}
+  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+    type: 3}
   spawners:
   - {fileID: 738309266}
   - {fileID: 1074005393}
