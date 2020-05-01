@@ -32,7 +32,7 @@ public class MobSpawnSystem : MonoBehaviour
             {
                 foreach (GameObject spawn in spawners)
                 {
-                    Selection = Random.Range(0, 2);
+                    Selection = Random.Range(0, 3);
 
                     if (Selection == 0)
                     {
@@ -40,7 +40,7 @@ public class MobSpawnSystem : MonoBehaviour
                     }
                     if (Selection == 1)
                     {
-                        SpawnCultist(spawn.transform);
+                        //SpawnCultist(spawn.transform);
                     }
                     if (Selection == 2)
                     {
