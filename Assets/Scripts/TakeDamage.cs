@@ -45,6 +45,13 @@ public class TakeDamage : State
                 stateMachine.sprite_renderer.color = damagedColor;
                 stateMachine.health -= stateMachine.lastDamageAmt;
 
+                if (stateMachine.health <- 0)
+                {
+                    stateMachine.isAlive = false;
+                }
+
+                Debug.Log("Vinny's Health: " + stateMachine.health);
+
                 if (Time.time > currentDelay)
                 {
                     stateMachine.sprite_renderer.color = normalColor;
