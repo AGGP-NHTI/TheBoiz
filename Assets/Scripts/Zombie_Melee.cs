@@ -13,7 +13,7 @@ public class Zombie_Melee : State
 
     public override void OnStateEnter()
     {
-        coolDown = 1f;
+        coolDown = zmStateMachine.zom.attack_cooldown;
 
         PlayerStateMachine plr = GameObject.Find("player").GetComponentInParent<PlayerStateMachine>();
         plr.SetState(new TakeDamage(plr));
