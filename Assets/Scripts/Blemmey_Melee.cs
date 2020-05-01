@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie_Melee : State
+public class Blemmey_Melee : State
 {
 
     private float myTime = 0f;
     private float coolDown;
 
-    public Zombie_Melee(ZombieStateMachine sm) : base(sm)
+    public Blemmey_Melee(BlemmeyStateMachine sm) : base(sm)
     { }
 
     public override void OnStateEnter()
@@ -19,7 +19,7 @@ public class Zombie_Melee : State
         Debug.Log("!");
 
         PlayerStateMachine plr = GameObject.Find("player").GetComponentInParent<PlayerStateMachine>();
-        plr.lastDamageAmt = zmStateMachine.zom.damage; // Set Vinny's last taken damage value to be the zombie's hands
+        plr.lastDamageAmt = blStateMachine.blem.damage; // Set Vinny's last taken damage value to be the zombie's hands
         plr.SetState(new TakeDamage(plr));
     }
 
@@ -32,9 +32,9 @@ public class Zombie_Melee : State
     {
         myTime = myTime + Time.deltaTime;
 
-        if(myTime > coolDown)
+        if (myTime > coolDown)
         {
-            zmStateMachine.SetState(new Attack(zmStateMachine));
+            blStateMachine.SetState(new Attack(blStateMachine));
         }
     }
 }

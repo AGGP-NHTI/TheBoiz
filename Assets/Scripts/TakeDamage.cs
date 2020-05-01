@@ -10,8 +10,11 @@ public class TakeDamage : State
     private float delay = 0.5f;
     float currentDelay = 0f;
 
+    private bool deliver_damage;
+
     public bool isPlayer;
     public bool isZombie;
+    public bool isBlemmey;
 
     public TakeDamage(PlayerStateMachine sm) : base(sm)
     {
@@ -23,12 +26,18 @@ public class TakeDamage : State
         isZombie = true;
     }
 
+    public TakeDamage(BlemmeyStateMachine sm) : base(sm)
+    {
+        isBlemmey = true;
+    }
+
     public override void OnStateEnter()
     {
         normalColor = new Color(1.0f, 1.0f, 1.0f);
         damagedColor = new Color(1.0f, 0.24f, 0.24f); // Red
         damaged = true;
         currentDelay = Time.time + delay;
+        deliver_damage = false;
     }
 
     public override void Tick()
@@ -43,14 +52,21 @@ public class TakeDamage : State
             if(isPlayer)
             {
                 stateMachine.sprite_renderer.color = damagedColor;
-                stateMachine.health -= stateMachine.lastDamageAmt;
+                
+
+                if(!deliver_damage)
+                {
+                    deliver_damage = true;
+                    stateMachine.health -= stateMachine.lastDamageAmt;
+                    Debug.Log("Vinny's Health: " + stateMachine.health);
+                }
 
                 if (stateMachine.health <= 0)
                 {
                     stateMachine.isAlive = false;
                 }
 
-                Debug.Log("Vinny's Health: " + stateMachine.health);
+                
 
                 if (Time.time > currentDelay)
                 {
@@ -61,7 +77,14 @@ public class TakeDamage : State
             }
             if(isZombie)
             {
-                zmStateMachine.health -= zmStateMachine.lastDamageAmt;
+
+                if (!deliver_damage)
+                {
+                    deliver_damage = true;
+                    zmStateMachine.health -= zmStateMachine.lastDamageAmt;
+                }
+                
+                
 
                 if(zmStateMachine.health <- 0)
                 {
@@ -71,7 +94,26 @@ public class TakeDamage : State
                 damaged = false;
                 zmStateMachine.SetState(new Attack(zmStateMachine));
             }
-            
+            if (isBlemmey)
+            {
+
+                if (!deliver_damage)
+                {
+                    deliver_damage = true;
+                    blStateMachine.health -= blStateMachine.lastDamageAmt;
+                }
+
+
+
+                if (blStateMachine.health < -0)
+                {
+                    blStateMachine.isAlive = false;
+                }
+
+                damaged = false;
+                blStateMachine.SetState(new Attack(blStateMachine));
+            }
+
         }
     }
 }

@@ -10,6 +10,7 @@ public class BlemmeyStateMachine : MonoBehaviour
     public float lastDamageAmt; // Value of the last amount of damage taken -- so we can pass in proper weapon damage
 
     public State currentState;
+    public Blemmey blem;
 
     private void Start()
     {
@@ -18,7 +19,9 @@ public class BlemmeyStateMachine : MonoBehaviour
         isAlive = true;
         lastDamageAmt = 0;
 
-        
+        blem = new Blemmey();
+
+        SetState(new Attack(this));
     }
 
     private void Update()

@@ -35,6 +35,13 @@ public class ProjectileScript : MonoBehaviour
             zsm.SetState(new TakeDamage(zsm));
             Destroy(gameObject);
         }
+        else if (collision.transform.GetComponentInParent<BlemmeyStateMachine>())
+        {
+            BlemmeyStateMachine bsm = collision.transform.GetComponentInParent<BlemmeyStateMachine>();
+            bsm.lastDamageAmt = damage;
+            bsm.SetState(new TakeDamage(bsm));
+            Destroy(gameObject);
+        }
         else if(collision.tag == "colliders" || collision.tag == "lava")
         {
             

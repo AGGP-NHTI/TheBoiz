@@ -2,6 +2,7 @@
 {
     protected PlayerStateMachine stateMachine;
     protected ZombieStateMachine zmStateMachine;
+    protected BlemmeyStateMachine blStateMachine;
 
     public abstract void Tick();
 
@@ -16,6 +17,11 @@
     public State(ZombieStateMachine sm)
     {
         this.zmStateMachine = sm;
+    }
+
+    public State(BlemmeyStateMachine sm)
+    {
+        this.blStateMachine = sm;
     }
 
 }
