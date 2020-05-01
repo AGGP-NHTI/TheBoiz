@@ -15,7 +15,10 @@ public class Lava : MonoBehaviour
 
         if (collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
-            collision.transform.GetComponentInParent<PlayerStateMachine>().isAlive = false;
+            if (collision.name == "player")
+            {
+                collision.transform.GetComponentInParent<PlayerStateMachine>().isAlive = false;
+            }
         }
     }
     // Update is called once per frame
