@@ -30,6 +30,6 @@ public class Attack : State
             zmStateMachine.SetState(new Zombie_Melee(zmStateMachine));
         }
 
-        zmStateMachine.GetComponent<Rigidbody2D>().velocity = dir * 3;
+        zmStateMachine.GetComponent<Rigidbody2D>().velocity = dir * zmStateMachine.zom.speed;
     }
 }

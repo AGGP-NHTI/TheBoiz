@@ -10,9 +10,11 @@ public class ZombieStateMachine : MonoBehaviour
     public float lastDamageAmt; // Value of the last amount of damage taken -- so we can pass in proper weapon damage
 
     public State currentState;
+    public Zombie zom;
 
     private void Start()
     {
+        zom = new Zombie();
         currentState = null;
         health = 100;
         isAlive = true;
