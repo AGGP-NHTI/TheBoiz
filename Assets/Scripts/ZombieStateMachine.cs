@@ -18,7 +18,7 @@ public class ZombieStateMachine : MonoBehaviour
         isAlive = true;
         lastDamageAmt = 0;
 
-        SetState(new Wander(this));
+        SetState(new Attack(this));
     }
 
     private void Update()
@@ -26,6 +26,11 @@ public class ZombieStateMachine : MonoBehaviour
         if (currentState != null)
         {
             currentState.Tick();
+        }
+
+        if(!isAlive)
+        {
+            Destroy(gameObject);
         }
     }
 

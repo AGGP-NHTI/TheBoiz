@@ -15,8 +15,6 @@ public class ProjectileScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        Debug.Log("!");
-
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
             if (owner.GetComponent<PlayerStateMachine>())

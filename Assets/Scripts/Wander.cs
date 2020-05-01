@@ -29,6 +29,9 @@ public class Wander : State
 
     public override void Tick()
     {
+
+        eyeSight();
+
         myTime = myTime + Time.deltaTime;
 
         if(myTime >= waitTime)
@@ -48,10 +51,24 @@ public class Wander : State
 
     private void move()
     {
-        Debug.Log(walkDir);
-        Debug.Log(waitTime);
         zmStateMachine.GetComponent<Rigidbody2D>().velocity = walkDir.normalized * walkDist;
         idle();
+    }
+
+    private void eyeSight()
+    {
+
+        Vector3 pos = zmStateMachine.transform.position;
+        Vector3 dir = ((pos - GameObject.Find("player").transform.position).normalized) * -1;
+
+        Debug.DrawRay(pos, dir * 25);
+        RaycastHit2D[] hit = Physics2D.RaycastAll(pos, dir);
+        
+
+        for(int i = 0; i < hit.Length; i++)
+        {
+            RaycastHit2D x = hit[i];
+        }
     }
 
 }

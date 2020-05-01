@@ -62,7 +62,7 @@ public class TakeDamage : State
                 }
 
                 damaged = false;
-                zmStateMachine.SetState(null);
+                zmStateMachine.SetState(new Attack(zmStateMachine));
             }
             
         }
