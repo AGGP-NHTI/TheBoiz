@@ -45,7 +45,7 @@ public class TakeDamage : State
                 stateMachine.sprite_renderer.color = damagedColor;
                 stateMachine.health -= stateMachine.lastDamageAmt;
 
-                if (stateMachine.health <- 0)
+                if (stateMachine.health <= 0)
                 {
                     stateMachine.isAlive = false;
                 }
