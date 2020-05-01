@@ -8,6 +8,7 @@ public class ProjectileScript : MonoBehaviour
     public float damage;
     public Rigidbody2D body;
     public AudioClip impact;
+    public AudioClip impact_flesh;
     public GameObject audio_player;
 
     public GameObject owner;
@@ -33,6 +34,11 @@ public class ProjectileScript : MonoBehaviour
             ZombieStateMachine zsm = collision.transform.GetComponentInParent<ZombieStateMachine>();
             zsm.lastDamageAmt = damage;
             zsm.SetState(new TakeDamage(zsm));
+
+            GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+            aud.GetComponent<AudioSource>().volume = .5f;
+            aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+
             Destroy(gameObject);
         }
         else if (collision.transform.GetComponentInParent<BlemmeyStateMachine>())
@@ -40,6 +46,11 @@ public class ProjectileScript : MonoBehaviour
             BlemmeyStateMachine bsm = collision.transform.GetComponentInParent<BlemmeyStateMachine>();
             bsm.lastDamageAmt = damage;
             bsm.SetState(new TakeDamage(bsm));
+
+            GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+            aud.GetComponent<AudioSource>().volume = .5f;
+            aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+
             Destroy(gameObject);
         }
         else if(collision.tag == "colliders" || collision.tag == "lava")
@@ -49,6 +60,7 @@ public class ProjectileScript : MonoBehaviour
         else
         {
             GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+            aud.GetComponent<AudioSource>().volume = .25f;
             aud.GetComponent<AudioSource>().PlayOneShot(impact);
             Destroy(gameObject);
         }
