@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStateMachine : MonoBehaviour
 {
@@ -76,6 +77,13 @@ public class PlayerStateMachine : MonoBehaviour
         updateWalkingFrame();
 
         spriteAngle();
+
+        /*Hey guys it James Im just trying something out for the gameOver*/
+        if (!isAlive)
+        {
+            death();
+        }
+        //*************************************************//
     }
 
     public void SetState(State state)
@@ -202,4 +210,11 @@ public class PlayerStateMachine : MonoBehaviour
         movement = new Vector2(moveHorizontal, moveVertical);
         plr_body.velocity = movement * speed;
     }
+
+    /*Hey guys it James Im just trying something out for the gameOver*/
+    void death()
+    {
+        SceneManager.LoadScene("Charon");
+    }
+    //*************************************************//
 }
