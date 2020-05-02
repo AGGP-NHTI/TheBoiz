@@ -11,7 +11,7 @@ public class ProjectileScript : MonoBehaviour
     public AudioClip impact_flesh;
     public GameObject audio_player;
 
-    public GameObject owner;
+    public Transform owner;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
