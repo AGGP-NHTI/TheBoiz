@@ -396,7 +396,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 325219288}
@@ -16469,7 +16469,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 798516908}
@@ -16935,7 +16935,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 1942864761}
@@ -17628,7 +17628,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 253277842}
@@ -18032,7 +18032,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 1430261225}
@@ -18812,7 +18812,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 2115929872}
@@ -19248,7 +19248,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 606142216}
@@ -21312,7 +21312,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 526854017}
@@ -44777,7 +44777,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 526854017}
@@ -46139,7 +46139,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 291813469}
@@ -46296,7 +46296,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 178929694}
@@ -46452,7 +46452,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 1088772477}
@@ -46532,7 +46532,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 1841100185}
@@ -47449,7 +47449,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 1200856010}
@@ -48205,7 +48205,7 @@ MonoBehaviour:
   SpawnPos: {fileID: 0}
   Zombie: {fileID: 5147057317458668003, guid: 1c89f74729e31c84d8a48f4e134f0c82, type: 3}
   Cultist: {fileID: 0}
-  Bleemeay: {fileID: 6848087612212622808, guid: 4caccf1b8d0a7ad4e901e87df89b14bc,
+  Bleemeay: {fileID: 4439953836285717315, guid: 78a1346143d60e94b84c236eeb9ee617,
     type: 3}
   spawners:
   - {fileID: 738309266}

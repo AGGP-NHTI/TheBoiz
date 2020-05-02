@@ -8,6 +8,10 @@ public class Weapon
     public float velocity;
     public float damage;
 
+    public bool shotgun;
+    public int pellets;
+    public float spread;
+
     public Weapon()
     {
     }
@@ -17,5 +21,16 @@ public class Weapon
         fireRate = .001f;
         velocity = 30f;
         damage = 35f;
+        shotgun = false;
+    }
+
+    public void set_shotgun()
+    {
+        fireRate = 1f;
+        velocity = 40f;
+        damage = 20f;
+        shotgun = true;
+        pellets = 5;
+        spread = 50f;
     }
 }

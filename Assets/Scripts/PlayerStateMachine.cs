@@ -41,7 +41,7 @@ public class PlayerStateMachine : MonoBehaviour
         plr_sprites = Resources.LoadAll<Sprite>("player");
         canShoot = true;
         plr_weapon = new Weapon();
-        plr_weapon.set_1911();
+        plr_weapon.set_shotgun();
 
         impact = new AudioClip[3];
         impact_flesh = new AudioClip[3];
@@ -113,18 +113,40 @@ public class PlayerStateMachine : MonoBehaviour
 
     public void playerShoot()
     {
-        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
-        GetComponentInParent<Transform>()); // Create projectile)
-        projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
-        proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
-        proj.GetComponent<ProjectileScript>().impact = impact[Random.Range(0, 3)];
-        proj.GetComponent<ProjectileScript>().impact_flesh = impact_flesh[Random.Range(0, 3)];
-        //proj.GetComponent<ProjectileScript>().owner = GetComponentInParent<GameObject>();
+        if(plr_weapon.shotgun)
+        {
 
-        //Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
+            int i = 0;
 
-        plr_audio.volume = .25f;
-        plr_audio.PlayOneShot(gunShot);
+            while(i < plr_weapon.pellets)
+            {
+                GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
+                GetComponentInParent<Transform>()); // Create projectile)\
+                projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x + Random.Range(-plr_weapon.spread, plr_weapon.spread), plr_dir.y + Random.Range(-plr_weapon.spread, plr_weapon.spread)).normalized) * plr_weapon.velocity; // Set projectiles velocity
+                proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
+                i++;
+            }
+
+            plr_audio.volume = .25f;
+            plr_audio.PlayOneShot(gunShot);
+        }
+        else
+        {
+            GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
+            GetComponentInParent<Transform>()); // Create projectile)
+            projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
+            proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
+            proj.GetComponent<ProjectileScript>().impact = impact[Random.Range(0, 3)];
+            proj.GetComponent<ProjectileScript>().impact_flesh = impact_flesh[Random.Range(0, 3)];
+            //proj.GetComponent<ProjectileScript>().owner = GetComponentInParent<GameObject>();
+
+            //Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
+
+            plr_audio.volume = .25f;
+            plr_audio.PlayOneShot(gunShot);
+        }
+
+        
     }
 
     void spriteAngle()
