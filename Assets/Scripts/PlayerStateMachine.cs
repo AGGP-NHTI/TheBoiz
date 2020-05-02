@@ -94,13 +94,14 @@ public class PlayerStateMachine : MonoBehaviour
 
     public void playerShoot()
     {
-        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
-        GetComponentInParent<Transform>()); // Create projectile)
+        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity) as GameObject; // Create projectile)
+
+        projectile.transform.parent = gameObject.transform;
 
         projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
         proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
         proj.GetComponent<ProjectileScript>().impact = impact;
-        proj.GetComponent<ProjectileScript>().owner = GetComponentInParent<GameObject>();
+        proj.GetComponent<ProjectileScript>().owner = projectile.transform.parent;
 
         Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
 
