@@ -28,9 +28,9 @@ public class Weapon
     {
         fireRate = 1f;
         velocity = 40f;
-        damage = 20f;
+        damage = 25f;
         shotgun = true;
-        pellets = 5;
+        pellets = 7;
         spread = 50f;
     }
 }

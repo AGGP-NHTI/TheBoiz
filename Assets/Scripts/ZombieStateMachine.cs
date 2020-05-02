@@ -84,32 +84,32 @@ public class ZombieStateMachine : MonoBehaviour
         if (angle > -25 && angle < 25) //Right
         {
             //sprite_renderer.sprite = plr_sprites[20];
-            AnimateRunBaseIndex = 4;
+            AnimateRunBaseIndex = 21;
         }
         else if (angle > 25 && angle < 75) //Right Up
         {
             //sprite_renderer.sprite = plr_sprites[14];
-            AnimateRunBaseIndex = 10;
+            AnimateRunBaseIndex = 15;
         }
         else if (angle > 75 && angle < 115) //Up
         {
             //sprite_renderer.sprite = plr_sprites[2];
-            AnimateRunBaseIndex = 2;
+            AnimateRunBaseIndex = 12;
         }
         else if (angle > 115 && angle < 165) //Left Up
         {
             //sprite_renderer.sprite = plr_sprites[11];
-            AnimateRunBaseIndex = 16;
+            AnimateRunBaseIndex = 9;
         }
         else if (angle > 165 || angle < -165) //Left
         {
             //sprite_renderer.sprite = plr_sprites[5];
-            AnimateRunBaseIndex = 19;
+            AnimateRunBaseIndex = 3;
         }
         else if (angle > -165 && angle < -115) //Left Down
         {
             //sprite_renderer.sprite = plr_sprites[8];
-            AnimateRunBaseIndex = 13;
+            AnimateRunBaseIndex = 6;
         }
         else if (angle > -115 && angle < -75) //Down
         {
@@ -119,7 +119,7 @@ public class ZombieStateMachine : MonoBehaviour
         else if (angle > -75 && angle < -25) //Right Down
         {
             //sprite_renderer.sprite = plr_sprites[17];
-            AnimateRunBaseIndex = 7;
+            AnimateRunBaseIndex = 18;
         }
 
         sprite_renderer.sprite = zom_sprites[AnimateRunBaseIndex + anim_frame];
