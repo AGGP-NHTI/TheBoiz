@@ -1,7 +1,8 @@
-﻿using System;
+﻿//using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStateMachine : MonoBehaviour
 {
@@ -31,8 +32,9 @@ public class PlayerStateMachine : MonoBehaviour
     public Vector3 plr_dir;
 
     public AudioClip gunShot;
-    public AudioClip impact;
+    public AudioClip[] impact;
     public AudioSource plr_audio;
+    public AudioClip[] impact_flesh;
 
     private void Awake()
     {
@@ -41,8 +43,18 @@ public class PlayerStateMachine : MonoBehaviour
         plr_weapon = new Weapon();
         plr_weapon.set_1911();
 
+        impact = new AudioClip[3];
+        impact_flesh = new AudioClip[3];
+
         plr_audio = GetComponent<AudioSource>();
-        impact = Resources.Load<AudioClip>("bulletimpact1");
+        impact[0] = Resources.Load<AudioClip>("bulletimpact1");
+        impact[1] = Resources.Load<AudioClip>("bulletimpact2");
+        impact[2] = Resources.Load<AudioClip>("bulletimpact3");
+
+        impact_flesh[0] = Resources.Load<AudioClip>("bulletflesh1");
+        impact_flesh[1] = Resources.Load<AudioClip>("bulletflesh2");
+        impact_flesh[2] = Resources.Load<AudioClip>("bulletflesh3");
+        gunShot = Resources.Load<AudioClip>("m16");
     }
 
     void Start()
@@ -76,6 +88,13 @@ public class PlayerStateMachine : MonoBehaviour
         updateWalkingFrame();
 
         spriteAngle();
+
+        /*Hey guys it James Im just trying something out for the gameOver*/
+        if (!isAlive)
+        {
+            death();
+        }
+        //*************************************************//
     }
 
     public void SetState(State state)
@@ -94,16 +113,15 @@ public class PlayerStateMachine : MonoBehaviour
 
     public void playerShoot()
     {
-        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity) as GameObject; // Create projectile)
-
-        projectile.transform.parent = gameObject.transform;
-
+        GameObject projectile = Instantiate(proj, transform.position, Quaternion.identity,
+        GetComponentInParent<Transform>()); // Create projectile)
         projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(plr_dir.x, plr_dir.y).normalized) * plr_weapon.velocity; // Set projectiles velocity
         proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
-        proj.GetComponent<ProjectileScript>().impact = impact;
-        proj.GetComponent<ProjectileScript>().owner = projectile.transform.parent;
+        proj.GetComponent<ProjectileScript>().impact = impact[Random.Range(0, 3)];
+        proj.GetComponent<ProjectileScript>().impact_flesh = impact_flesh[Random.Range(0, 3)];
+        //proj.GetComponent<ProjectileScript>().owner = GetComponentInParent<GameObject>();
 
-        Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
+        //Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
 
         plr_audio.volume = .25f;
         plr_audio.PlayOneShot(gunShot);
@@ -203,4 +221,11 @@ public class PlayerStateMachine : MonoBehaviour
         movement = new Vector2(moveHorizontal, moveVertical);
         plr_body.velocity = movement * speed;
     }
+
+    /*Hey guys it James Im just trying something out for the gameOver*/
+    void death()
+    {
+        SceneManager.LoadScene("Charon");
+    }
+    //*************************************************//
 }
