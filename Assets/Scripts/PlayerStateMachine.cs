@@ -41,7 +41,7 @@ public class PlayerStateMachine : MonoBehaviour
         plr_sprites = Resources.LoadAll<Sprite>("player");
         canShoot = true;
         plr_weapon = new Weapon();
-        plr_weapon.set_shotgun();
+        plr_weapon.set_1911();
 
         impact = new AudioClip[3];
         impact_flesh = new AudioClip[3];
