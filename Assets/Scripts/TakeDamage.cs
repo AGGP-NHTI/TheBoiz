@@ -24,11 +24,13 @@ public class TakeDamage : State
     public TakeDamage(ZombieStateMachine sm) : base(sm)
     {
         isZombie = true;
+        zmStateMachine.health -= zmStateMachine.lastDamageAmt;
     }
 
     public TakeDamage(BlemmeyStateMachine sm) : base(sm)
     {
         isBlemmey = true;
+        blStateMachine.health -= blStateMachine.lastDamageAmt;
     }
 
     public override void OnStateEnter()
@@ -81,7 +83,7 @@ public class TakeDamage : State
                 if (!deliver_damage)
                 {
                     deliver_damage = true;
-                    zmStateMachine.health -= zmStateMachine.lastDamageAmt;
+                    //zmStateMachine.health -= zmStateMachine.lastDamageAmt;
                 }
                 
                 
@@ -100,7 +102,7 @@ public class TakeDamage : State
                 if (!deliver_damage)
                 {
                     deliver_damage = true;
-                    blStateMachine.health -= blStateMachine.lastDamageAmt;
+                    //blStateMachine.health -= blStateMachine.lastDamageAmt;
                 }
 
 
