@@ -16,8 +16,6 @@ public class Zombie_Melee : State
         myTime = 0f;
         coolDown = 1f;
 
-        Debug.Log("!");
-
         PlayerStateMachine plr = GameObject.Find("player").GetComponentInParent<PlayerStateMachine>();
         plr.lastDamageAmt = zmStateMachine.zom.damage; // Set Vinny's last taken damage value to be the zombie's hands
         plr.SetState(new TakeDamage(plr));

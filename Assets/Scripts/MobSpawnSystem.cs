@@ -19,6 +19,11 @@ public class MobSpawnSystem : MonoBehaviour
         isactive = true;
     }
 
+    private void Update()
+    {
+        
+    }
+
     // Update is called once per frame
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -53,6 +58,7 @@ public class MobSpawnSystem : MonoBehaviour
             }
         }
     }
+
 
     public void SpawnBleemeay(Transform spawnLoc)
     {
