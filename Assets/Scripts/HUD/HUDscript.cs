@@ -20,7 +20,7 @@ public class HUDscript : MonoBehaviour
     void Update()
     {
         /*Hey guys it james trying to work out HUD*/
-        HUDHP.text = "" + psm.health;
+        HUDHP.text = "HP: " + psm.health;
         /*********************************************/
     }
 }
