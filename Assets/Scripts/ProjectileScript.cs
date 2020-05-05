@@ -18,7 +18,11 @@ public class ProjectileScript : MonoBehaviour
 
         if(collision.transform.GetComponentInParent<PlayerStateMachine>())
         {
-            if (owner.GetComponent<PlayerStateMachine>())
+            if (collision.GetComponent<ProjectileScript>())
+            {
+
+            }
+            else if (owner.GetComponent<PlayerStateMachine>())
             {
 
             }
