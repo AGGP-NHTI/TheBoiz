@@ -21,15 +21,17 @@ public class BlemmeyStateMachine : MonoBehaviour
 
     private void Start()
     {
+
+        blem = new Blemmey();
         currentState = null;
-        health = 100;
+        health = blem.health;
         isAlive = true;
         lastDamageAmt = 0;
 
         blem_sprites = Resources.LoadAll<Sprite>("Blemmey");
         sprite_renderer = GetComponent<SpriteRenderer>();
 
-        blem = new Blemmey();
+        
 
         SetState(new Attack(this));
     }

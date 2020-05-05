@@ -8,6 +8,7 @@ public class Attack : State
     private bool isZombie;
     private bool isBlemmey;
     private bool isCultist;
+    private bool isPride;
 
     private float myTime = 0f;
     private Vector2 dir;
@@ -28,6 +29,11 @@ public class Attack : State
         isCultist = true;
     }
 
+    public Attack(PrideStateMachine sm) : base(sm)
+    {
+        isPride = true;
+    }
+
     public override void OnStateEnter()
     {
 
@@ -43,9 +49,9 @@ public class Attack : State
 
         if(isZombie)
         {
-            Vector3 pos = zmStateMachine.transform.position;
-            Vector3 plr_pos = GameObject.Find("player").transform.position;
-            Vector3 dir = (pos - plr_pos).normalized * -1;
+            Vector2 pos = zmStateMachine.transform.position;
+            Vector2 plr_pos = GameObject.Find("player").transform.position;
+            Vector2 dir = (pos - plr_pos).normalized * -1;
 
             float dist = Vector2.Distance(GameObject.Find("player").transform.position, zmStateMachine.transform.position);
 
@@ -59,9 +65,9 @@ public class Attack : State
 
         if(isBlemmey)
         {
-            Vector3 pos = blStateMachine.transform.position;
-            Vector3 plr_pos = GameObject.Find("player").transform.position;
-            Vector3 dir = (pos - plr_pos).normalized * -1;
+            Vector2 pos = blStateMachine.transform.position;
+            Vector2 plr_pos = GameObject.Find("player").transform.position;
+            Vector2 dir = (pos - plr_pos).normalized * -1;
 
             float dist = Vector2.Distance(GameObject.Find("player").transform.position, blStateMachine.transform.position);
 
@@ -77,9 +83,9 @@ public class Attack : State
         {
             myTime = myTime + Time.deltaTime;
 
-            Vector3 pos = clStateMachine.transform.position;
-            Vector3 plr_pos = GameObject.Find("player").transform.position;
-            Vector3 dir = (pos - plr_pos).normalized;
+            Vector2 pos = clStateMachine.transform.position;
+            Vector2 plr_pos = GameObject.Find("player").transform.position;
+            Vector2 dir = (pos - plr_pos).normalized;
             Vector2 shootDir = (pos - plr_pos).normalized * -1;
 
             float dist = Vector2.Distance(GameObject.Find("player").transform.position, clStateMachine.transform.position);
@@ -95,6 +101,35 @@ public class Attack : State
                 myTime = 0f;
             }
 
+        }
+
+        if(isPride)
+        {
+            myTime = myTime + Time.deltaTime;
+
+            Vector2 pos = prStateMachine.transform.position;
+            Vector2 plr_pos = GameObject.Find("player").transform.position;
+            Vector2 dir = (pos - plr_pos).normalized * -1;
+
+            float dist = Vector2.Distance(GameObject.Find("player").transform.position, prStateMachine.transform.position);
+
+            if(myTime >= prStateMachine.pride.cooldown)
+            {
+                int rng = Random.Range(1, 3);
+
+                if(rng == 1)
+                {
+                    prStateMachine.SetState(new Pride_Charge(prStateMachine));
+                }
+                else if(rng == 2)
+                {
+                    prStateMachine.SetState(new Pride_Slam(prStateMachine));
+                }
+
+                myTime = 0f;
+            }
+
+            prStateMachine.GetComponent<Rigidbody2D>().velocity = dir * prStateMachine.pride.speed;
         }
         
     }

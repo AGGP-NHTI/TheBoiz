@@ -20,16 +20,20 @@ public class CultistStateMachine : MonoBehaviour
     public int anim_frame = 0;
 
     public GameObject proj;
+    public AudioClip gunShot;
+    public AudioSource cult_audio;
 
     void Start()
     {
         cult = new Cultist();
         currentState = null;
-        health = 100;
+        health = cult.health;
         isAlive = true;
 
         cult_sprites = Resources.LoadAll<Sprite>("cultist");
+        gunShot = Resources.Load<AudioClip>("cultist_shot");
         sprite_renderer = GetComponent<SpriteRenderer>();
+        cult_audio = GetComponent<AudioSource>();
 
         SetState(new Attack(this));
     }
@@ -71,6 +75,9 @@ public class CultistStateMachine : MonoBehaviour
         projectile.GetComponent<Rigidbody2D>().velocity = (new Vector2(dir.x, dir.y).normalized) * cult.proj_velocity; // Set projectiles velocity
         proj.GetComponent<ProjectileScript>().damage = cult.damage; // Set projectiles damage
         proj.GetComponent<ProjectileScript>().owner = gameObject;
+
+        cult_audio.volume = .25f;
+        cult_audio.PlayOneShot(gunShot);
 
     }
 

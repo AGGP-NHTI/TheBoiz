@@ -4,6 +4,7 @@
     protected ZombieStateMachine zmStateMachine;
     protected BlemmeyStateMachine blStateMachine;
     protected CultistStateMachine clStateMachine;
+    protected PrideStateMachine prStateMachine;
 
     public abstract void Tick();
 
@@ -30,4 +31,8 @@
         this.clStateMachine = sm;
     }
 
+    public State(PrideStateMachine sm)
+    {
+        this.prStateMachine = sm;
+    }
 }

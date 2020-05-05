@@ -90,6 +90,25 @@ public class ProjectileScript : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (collision.transform.GetComponentInParent<PrideStateMachine>())
+        {
+            if (owner.GetComponent<PrideStateMachine>())
+            {
+
+            }
+            else
+            {
+                PrideStateMachine psm = collision.transform.GetComponentInParent<PrideStateMachine>();
+                psm.lastDamageAmt = damage;
+                psm.SetState(new TakeDamage(psm));
+
+                GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+                aud.GetComponent<AudioSource>().volume = .5f;
+                aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+
+                Destroy(gameObject);
+            }
+        }
         else if(collision.tag == "colliders" || collision.tag == "lava")
         {
             

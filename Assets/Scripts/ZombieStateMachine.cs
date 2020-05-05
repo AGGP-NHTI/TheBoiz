@@ -23,7 +23,7 @@ public class ZombieStateMachine : MonoBehaviour
     {
         zom = new Zombie();
         currentState = null;
-        health = 100;
+        health = zom.health;
         isAlive = true;
         lastDamageAmt = 0;
 

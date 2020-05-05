@@ -16,6 +16,7 @@ public class TakeDamage : State
     public bool isZombie;
     public bool isBlemmey;
     public bool isCultist;
+    public bool isPride;
 
     public TakeDamage(PlayerStateMachine sm) : base(sm)
     {
@@ -38,6 +39,12 @@ public class TakeDamage : State
     {
         isCultist = true;
         clStateMachine.health -= clStateMachine.lastDamageAmt;
+    }
+
+    public TakeDamage(PrideStateMachine sm) : base(sm)
+    {
+        isPride = true;
+        prStateMachine.health -= prStateMachine.lastDamageAmt;
     }
 
     public override void OnStateEnter()
@@ -131,6 +138,16 @@ public class TakeDamage : State
 
                 damaged = false;
                 clStateMachine.SetState(new Attack(clStateMachine));
+            }
+            if(isPride)
+            {
+                if(prStateMachine.health <= 0)
+                {
+                    prStateMachine.isAlive = false;
+                }
+
+                damaged = false;
+                prStateMachine.SetState(new Attack(prStateMachine));
             }
         }
     }
