@@ -7,6 +7,7 @@ public class HUDscript : MonoBehaviour
 {
     /*Hey guys it james trying to work out HUD*/
     public Text HUDHP;
+    public Text Ammo;
     public PlayerStateMachine psm;
     /*********************************************/
 
@@ -22,5 +23,6 @@ public class HUDscript : MonoBehaviour
         /*Hey guys it james trying to work out HUD*/
         HUDHP.text = "HP: " + psm.health;
         /*********************************************/
+        Ammo.text = "Ammo: " + psm.plr_weapon.currentAmmo + " / " + psm.plr_weapon.maxMag;
     }
 }
