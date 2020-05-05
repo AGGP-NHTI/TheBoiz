@@ -7,6 +7,9 @@ public class Weapon
     public float fireRate;
     public float velocity;
     public float damage;
+    public int maxMag;
+    public int currentAmmo;
+    public float reloadSpeed;
 
     public bool shotgun;
     public int pellets;
@@ -22,6 +25,9 @@ public class Weapon
         velocity = 30f;
         damage = 35f;
         shotgun = false;
+        maxMag = 7;
+        currentAmmo = maxMag;
+        reloadSpeed = 1f;
     }
 
     public void set_shotgun()
