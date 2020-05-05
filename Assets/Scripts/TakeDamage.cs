@@ -15,6 +15,7 @@ public class TakeDamage : State
     public bool isPlayer;
     public bool isZombie;
     public bool isBlemmey;
+    public bool isCultist;
 
     public TakeDamage(PlayerStateMachine sm) : base(sm)
     {
@@ -31,6 +32,12 @@ public class TakeDamage : State
     {
         isBlemmey = true;
         blStateMachine.health -= blStateMachine.lastDamageAmt;
+    }
+
+    public TakeDamage(CultistStateMachine sm) : base(sm)
+    {
+        isCultist = true;
+        clStateMachine.health -= clStateMachine.lastDamageAmt;
     }
 
     public override void OnStateEnter()
@@ -88,7 +95,7 @@ public class TakeDamage : State
                 
                 
 
-                if(zmStateMachine.health <- 0)
+                if(zmStateMachine.health <= 0)
                 {
                     zmStateMachine.isAlive = false;
                 }
@@ -107,7 +114,7 @@ public class TakeDamage : State
 
 
 
-                if (blStateMachine.health < -0)
+                if (blStateMachine.health <= 0)
                 {
                     blStateMachine.isAlive = false;
                 }
@@ -115,7 +122,16 @@ public class TakeDamage : State
                 damaged = false;
                 blStateMachine.SetState(new Attack(blStateMachine));
             }
+            if(isCultist)
+            {
+                if(clStateMachine.health <= 0)
+                {
+                    clStateMachine.isAlive = false;
+                }
 
+                damaged = false;
+                clStateMachine.SetState(new Attack(clStateMachine));
+            }
         }
     }
 }

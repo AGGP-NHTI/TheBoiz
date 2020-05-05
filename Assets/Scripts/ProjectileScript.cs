@@ -11,7 +11,7 @@ public class ProjectileScript : MonoBehaviour
     public AudioClip impact_flesh;
     public GameObject audio_player;
 
-    public Transform owner;
+    public GameObject owner;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,31 +27,68 @@ public class ProjectileScript : MonoBehaviour
                 PlayerStateMachine psm = collision.transform.GetComponentInParent<PlayerStateMachine>();
                 psm.lastDamageAmt = damage;
                 psm.SetState(new TakeDamage(psm));
+
+                Destroy(gameObject);
             }
         }
         else if(collision.transform.GetComponentInParent<ZombieStateMachine>())
         {
-            ZombieStateMachine zsm = collision.transform.GetComponentInParent<ZombieStateMachine>();
-            zsm.lastDamageAmt = damage;
-            zsm.SetState(new TakeDamage(zsm));
+            if (owner.GetComponent<CultistStateMachine>())
+            {
 
-            GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
-            aud.GetComponent<AudioSource>().volume = .5f;
-            aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+            }
+            else
+            {
+                ZombieStateMachine zsm = collision.transform.GetComponentInParent<ZombieStateMachine>();
+                zsm.lastDamageAmt = damage;
+                zsm.SetState(new TakeDamage(zsm));
 
-            Destroy(gameObject);
+                GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+                aud.GetComponent<AudioSource>().volume = .5f;
+                aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+
+                Destroy(gameObject);
+            }
+            
         }
         else if (collision.transform.GetComponentInParent<BlemmeyStateMachine>())
         {
-            BlemmeyStateMachine bsm = collision.transform.GetComponentInParent<BlemmeyStateMachine>();
-            bsm.lastDamageAmt = damage;
-            bsm.SetState(new TakeDamage(bsm));
+            if (owner.GetComponent<CultistStateMachine>())
+            {
 
-            GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
-            aud.GetComponent<AudioSource>().volume = .5f;
-            aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+            }
+            else
+            {
+                BlemmeyStateMachine bsm = collision.transform.GetComponentInParent<BlemmeyStateMachine>();
+                bsm.lastDamageAmt = damage;
+                bsm.SetState(new TakeDamage(bsm));
 
-            Destroy(gameObject);
+                GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+                aud.GetComponent<AudioSource>().volume = .5f;
+                aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+
+                Destroy(gameObject);
+            }
+            
+        }
+        else if(collision.transform.GetComponentInParent<CultistStateMachine>())
+        {
+            if (owner.GetComponent<CultistStateMachine>())
+            {
+
+            }
+            else
+            {
+                CultistStateMachine csm = collision.transform.GetComponentInParent<CultistStateMachine>();
+                csm.lastDamageAmt = damage;
+                csm.SetState(new TakeDamage(csm));
+
+                GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
+                aud.GetComponent<AudioSource>().volume = .5f;
+                aud.GetComponent<AudioSource>().PlayOneShot(impact_flesh);
+
+                Destroy(gameObject);
+            }
         }
         else if(collision.tag == "colliders" || collision.tag == "lava")
         {

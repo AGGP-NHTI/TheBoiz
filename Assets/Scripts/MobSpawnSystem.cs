@@ -40,7 +40,7 @@ public class MobSpawnSystem : MonoBehaviour
                     }
                     if (Selection == 1)
                     {
-                        //SpawnCultist(spawn.transform);
+                        SpawnCultist(spawn.transform);
                     }
                     if (Selection == 2)
                     {

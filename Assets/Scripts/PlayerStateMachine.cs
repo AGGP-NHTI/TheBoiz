@@ -138,9 +138,9 @@ public class PlayerStateMachine : MonoBehaviour
             proj.GetComponent<ProjectileScript>().damage = plr_weapon.damage; // Set projectiles damage
             proj.GetComponent<ProjectileScript>().impact = impact[Random.Range(0, 3)];
             proj.GetComponent<ProjectileScript>().impact_flesh = impact_flesh[Random.Range(0, 3)];
-            //proj.GetComponent<ProjectileScript>().owner = GetComponentInParent<GameObject>();
+            proj.GetComponent<ProjectileScript>().owner = gameObject;
 
-            //Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
+            Debug.Log(proj.GetComponent<ProjectileScript>().owner); // Check if the owner was applied properly
 
             plr_audio.volume = .25f;
             plr_audio.PlayOneShot(gunShot);
