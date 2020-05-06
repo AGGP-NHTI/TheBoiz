@@ -160,8 +160,11 @@ MonoBehaviour:
   proj: {fileID: 2139472892570551724, guid: 24a66639dacc4e7409db0cec6563b6f2, type: 3}
   plr_dir: {x: 0, y: 0, z: 0}
   gunShot: {fileID: 8300000, guid: b50b2fa29a03ad040860e1bb5937221f, type: 3}
-  impact: {fileID: 0}
+  reloadSound: {fileID: 0}
+  impact:
+  - {fileID: 0}
   plr_audio: {fileID: 0}
+  impact_flesh: []
 --- !u!82 &1398935183082385388
 AudioSource:
   m_ObjectHideFlags: 0
