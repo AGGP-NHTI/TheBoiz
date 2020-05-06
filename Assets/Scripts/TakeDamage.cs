@@ -7,7 +7,7 @@ public class TakeDamage : State
 
     private Color damagedColor, normalColor;
     private bool damaged;
-    private float delay = 0.5f;
+    private float delay = 0.25f;
     float currentDelay = 0f;
 
     private bool deliver_damage;
@@ -93,6 +93,7 @@ public class TakeDamage : State
             }
             if(isZombie)
             {
+                zmStateMachine.sprite_renderer.color = damagedColor;
 
                 if (!deliver_damage)
                 {
@@ -107,12 +108,16 @@ public class TakeDamage : State
                     zmStateMachine.isAlive = false;
                 }
 
-                damaged = false;
-                zmStateMachine.SetState(new Attack(zmStateMachine));
+                if (Time.time > currentDelay)
+                {
+                    zmStateMachine.sprite_renderer.color = normalColor;
+                    damaged = false;
+                    zmStateMachine.SetState(new Attack(zmStateMachine));
+                }
             }
             if (isBlemmey)
             {
-
+                blStateMachine.sprite_renderer.color = damagedColor;
                 if (!deliver_damage)
                 {
                     deliver_damage = true;
@@ -126,28 +131,44 @@ public class TakeDamage : State
                     blStateMachine.isAlive = false;
                 }
 
-                damaged = false;
-                blStateMachine.SetState(new Attack(blStateMachine));
+                if (Time.time > currentDelay)
+                {
+                    blStateMachine.sprite_renderer.color = normalColor;
+                    damaged = false;
+                    blStateMachine.SetState(new Attack(blStateMachine));
+                }
             }
             if(isCultist)
             {
+                clStateMachine.sprite_renderer.color = damagedColor;
+
                 if(clStateMachine.health <= 0)
                 {
                     clStateMachine.isAlive = false;
                 }
 
-                damaged = false;
-                clStateMachine.SetState(new Attack(clStateMachine));
+                if (Time.time > currentDelay)
+                {
+                    clStateMachine.sprite_renderer.color = normalColor;
+                    damaged = false;
+                    clStateMachine.SetState(new Attack(clStateMachine));
+                }
             }
             if(isPride)
             {
+                prStateMachine.sprite_renderer.color = damagedColor;
+
                 if(prStateMachine.health <= 0)
                 {
                     prStateMachine.isAlive = false;
                 }
 
-                damaged = false;
-                prStateMachine.SetState(new Attack(prStateMachine));
+                if (Time.time > currentDelay)
+                {
+                    prStateMachine.sprite_renderer.color = normalColor;
+                    damaged = false;
+                    prStateMachine.SetState(new Attack(prStateMachine));
+                }
             }
         }
     }
