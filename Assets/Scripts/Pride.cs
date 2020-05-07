@@ -21,10 +21,10 @@ public class Pride
 
     public Pride()
     {
-        health = 1000f;
+        health = 1500f;
         speed = 1f;
         slam_damage = 50f;
-        cooldown = 8f;
+        cooldown = 5f;
         slam_buildup = 1.5f;
         slam_AOE = 3f;
         charge_buildup = 3f;
