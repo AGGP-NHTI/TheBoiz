@@ -113,7 +113,9 @@ public class Attack : State
 
             float dist = Vector2.Distance(GameObject.Find("player").transform.position, prStateMachine.transform.position);
 
-            if(myTime >= prStateMachine.pride.cooldown)
+        
+
+            if (myTime >= prStateMachine.pride.cooldown)
             {
                 int rng = Random.Range(1, 3);
 
@@ -133,5 +135,7 @@ public class Attack : State
         }
         
     }
+
+    
 
 }

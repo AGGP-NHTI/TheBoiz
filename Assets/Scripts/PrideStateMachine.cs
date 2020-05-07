@@ -11,13 +11,15 @@ public class PrideStateMachine : MonoBehaviour
     public float lastDamageAmt;
 
     public State currentState;
+    public string currentStateType;
 
     public Pride pride;
 
     public SpriteRenderer sprite_renderer;
     public Sprite[] pride_sprites;
-    public int AnimateRunBaseIndex;
+    public int AnimateRunBaseIndex = 0;
     public int anim_frame = 0;
+    private int stepAmt = 0;
 
     void Start()
     {
@@ -45,6 +47,22 @@ public class PrideStateMachine : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (step())
+        {
+            anim_frame += 1;
+
+            if (anim_frame > 2)
+            {
+                anim_frame = 0;
+            }
+        }
+
+        if(currentStateType == "Attack")
+        {
+            sprite_renderer.sprite = pride_sprites[AnimateRunBaseIndex + anim_frame];
+        }
+        
     }
 
     public void SetState(State state)
@@ -54,10 +72,26 @@ public class PrideStateMachine : MonoBehaviour
             state.OnStateExit();
         }
         currentState = state;
-        //currentStateType = currentState.GetType().Name;
+        currentStateType = currentState.GetType().Name;
         if (currentState != null)
         {
             currentState.OnStateEnter();
         }
+    }
+
+    bool step()
+    {
+        stepAmt += 1;
+
+
+        if (stepAmt > 60)
+        {
+
+            stepAmt = 0;
+            return true;
+
+        }
+
+        return false;
     }
 }

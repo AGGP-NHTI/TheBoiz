@@ -16,6 +16,7 @@ public class Pride_Slam : State
     public override void OnStateEnter()
     {
         Debug.Log("Slam Start");
+        prStateMachine.sprite_renderer.sprite = prStateMachine.pride_sprites[7];
     }
 
     public override void OnStateExit()
@@ -30,6 +31,8 @@ public class Pride_Slam : State
         if(myTime >= prStateMachine.pride.slam_buildup && attacked == false)
         {
             Debug.Log("SLAM");
+
+            prStateMachine.sprite_renderer.sprite = prStateMachine.pride_sprites[6];
 
             float dist = Vector2.Distance(GameObject.Find("player").transform.position, prStateMachine.transform.position);
 
