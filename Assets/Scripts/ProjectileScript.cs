@@ -120,7 +120,7 @@ public class ProjectileScript : MonoBehaviour
         else
         {
             GameObject aud = Instantiate(audio_player, transform.position, Quaternion.identity);
-            aud.GetComponent<AudioSource>().volume = .25f;
+            aud.GetComponent<AudioSource>().volume = .5f;
             aud.GetComponent<AudioSource>().PlayOneShot(impact);
             Destroy(gameObject);
         }
