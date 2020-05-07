@@ -105,7 +105,7 @@ public class Attack : State
 
         if(isPride)
         {
-            prStateMachine.pride.myTime += Time.deltaTime;
+            prStateMachine.pride.myTime = prStateMachine.pride.myTime +  Time.deltaTime;
 
             Vector2 pos = prStateMachine.transform.position;
             Vector2 plr_pos = GameObject.Find("player").transform.position;
@@ -115,7 +115,7 @@ public class Attack : State
 
         
 
-            if (myTime >= prStateMachine.pride.cooldown)
+            if (prStateMachine.pride.myTime >= prStateMachine.pride.cooldown)
             {
                 int rng = Random.Range(1, 3);
 
