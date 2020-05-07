@@ -17,6 +17,8 @@ public class Pride
     public float charge_buildup_speed;
     public float charge_duration;
 
+    public float myTime = 0f;
+
     public Pride()
     {
         health = 1000f;
