@@ -40,7 +40,7 @@ public class PlayerStateMachine : MonoBehaviour
 
     private void Awake()
     {
-        plr_sprites = Resources.LoadAll<Sprite>("player");
+        plr_sprites = Resources.LoadAll<Sprite>("playerM1911");
         canShoot = true;
         plr_weapon = new Weapon();
         plr_weapon.set_1911();

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Charon.unity
     guid: 7c109486429f6c64192a19519f65cbc5
+  - enabled: 1
+    path: Assets/Scenes/Winner.unity
+    guid: b9ece884664cdb8459af40cd53e127e5
   m_configObjects: {}
