@@ -76,7 +76,7 @@ public class CultistStateMachine : MonoBehaviour
         proj.GetComponent<ProjectileScript>().damage = cult.damage; // Set projectiles damage
         proj.GetComponent<ProjectileScript>().owner = gameObject;
 
-        cult_audio.volume = .25f;
+        cult_audio.volume = .025f;
         cult_audio.PlayOneShot(gunShot);
 
     }

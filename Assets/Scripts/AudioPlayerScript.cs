@@ -10,11 +10,13 @@ public class AudioPlayerScript : MonoBehaviour
     private void Awake()
     {
         src = GetComponent<AudioSource>();
+        
     }
 
     void Update()
     {
-        if(!src.isPlaying)
+        src.volume = 0.25f;
+        if (!src.isPlaying)
         {
             Destroy(gameObject);
         }
